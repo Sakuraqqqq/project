@@ -5,19 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>anitoys动漫商城</title>
+    <link rel="icon" href="http://www.anitoys.com/app/topc/statics/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://www.anitoys.com/app/topc/statics/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/theme.css">
 </head>
 
 <body>
+
     <!-- 顶部导航 -->
+
     <div id="topnav" class="topnav">
         <div class="topbox">
             <div class="topnavLeft">
                 <div id="login">
                     <a href="./">欢迎来到aniToys</a> &nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="http://www.anitoys.com/passport-signin.html" classs="small-signin-enter">请登录</a>
-                    <a href="http://www.anitoys.com/passport-signup.html" class="small-signup-enter">免费注册</a>
+                    <a href="http://www.anitoys.com/passport-signup.html" class="small-signup-enter" style="color:#ff6600">免费注册</a>
                 </div>
                 <div id="member" style="display:none;">
                     您好<span id="uname_263"></span>！
@@ -30,7 +37,7 @@
                         <a href="member-mail.html">站内信</a>
                     </div>
                     <div class="subnav-item">
-                        <a href="trade-list.html" class="">我的订单 &nbsp;<i class="iconfont"></i></a>
+                        <a href="trade-list.html" class="">我的订单 &nbsp;<i class="icon"></i></a>
                         <div class="dropdown">
                             <ul>
                                 <li><a href="trade-finalTradeList.html">待补款订单</a></li>
@@ -70,8 +77,55 @@
                     </div>
                 </div>
             </div>
-
         </div>
+    </div>
+
+    <!-- 头部信息 -->
+
+    <div id="header">
+        <div class="headerBox">
+            <div class="headerImg">
+                <div class="row">
+                    <div class="headerLeft"></div>
+                    <div class="headerCenter">
+                        <div class="searchInp">
+                            <form action="http://www.anitoys.com/search.html" method="post" id="goods_search">
+                                <i class="iconfont icon-sousuo"></i>
+                                <input type="text" name="keyword" id="keyword" class="x-input" placeholder="请输入关键词">
+                                <input type="hidden" name="shop_id" id="shop_id" class="x-input" placeholder="商家ID">
+                                <input type="hidden" name="searchtype" id="searchtype" class="x-input" placeholder="搜索类型">
+                                <a href="javascript:void(0);" class="btn btn-search">搜索</a>
+                            </form>
+                            <div class="hots">
+                                <span style="color:#FF8000;">热门搜索：</span>
+                                <a href="http://www.anitoys.com/list.html?n=Fate" style="color:#FF8000;">Fate系列</a>
+                                <a href="http://www.anitoys.com/list.html?n=%E5%AE%88%E6%9C%9B%E5%85%88%E9%94%8B" style="color:#FF8000;">守望先锋</a>
+                                <a href="http://www.anitoys.com/list.html?n=%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5" style="color:#FF8000;">初音未来</a>
+                                <a href="http://www.anitoys.com/list.html?n=%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B" style="color:#FF8000;">全职高手</a>
+                                <a href="http://www.anitoys.com/list.html?n=%E5%88%80%E5%89%91%E4%B9%B1%E8%88%9E" style="color:#FF8000;">刀剑乱舞</a>
+                                <a href="http://www.anitoys.com/list.html?n=%E7%B2%BE%E7%81%B5%E5%AE%9D%E5%8F%AF%E6%A2%A6"
+                                    style="color:#FF8000;">精灵宝可梦</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="headerRight">
+                        <div class="minicart" id="minicart_">
+                            <a href="http://www.anitoys.com/cart.html" class="btn btn-simple btn-lg">
+                                <span>
+                                    <span>
+                                        <i class="iconfont icon-gouwuche">
+                                        <b data-type="1" class="up-cat-number">0</b>
+                                        </i>
+                                        去购物车结算
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 
