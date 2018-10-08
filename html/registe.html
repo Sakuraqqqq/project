@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>anitoys注册</title>
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/registe.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header" class="header">
+        <div class="wrap-lg">
+            <div class="row">
+                <div class="col-lg-4 header-left">
+                    <div class="logo"><a href="http://www.anitoys.com"><img src="http://upload2016.anitoys.com/Fm8LaB7iE_gxKbHsZCJ8NcnRynZj"
+                                alt="LOGO"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrap-lg clearfix">
+        <div class="col-lg-9">
+            <div class="signin2" style="background:url('http://upload2016.anitoys.com/FjSta2JDyEt9VgWZrTJ5qbzIJqH5'); background-size: cover; background-position: center;height:365px;">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="form-control soloyo-signup">
+                <h1 class="header-title">用户注册</h1>
+                <form action="http://www.anitoys.com/passport-signup.html" method="post" id="ajaxForm" class="form-tip-horizontal">
+                    <input type="hidden" name="next_page" value="http://www.anitoys.com/">
+                    <input type="hidden" name="key" value="topc_signup">
+                    <ul>
+                        <li class="form-row">
+                            <label class="form-label"><em>*</em>登录名</label>
+                            <span class="form-act has-figure">
+                                <input type="text" class="input-block action-account-check" name="pam_user[account]" id="for_account"
+                                    placeholder="用户名/邮箱/手机号，最少4个字符" required minlength="4" data-caution="请填写登录帐号，最少4个字符"
+                                    data-remote="http://www.anitoys.com/passport-signupcheck.html" autofocus>
+                                <i class="iconfont icon-wodejuhuasuan"></i>
+                            </span>
+                        </li>
+                        <li class="form-row">
+                            <label class="form-label"><em>*</em>设置密码</label>
+                            <span class="form-act has-figure">
+                                <input type="password" class="input-block auto-password-check-handle" name="pam_user[password]"
+                                    placeholder="6-20个字符" required minlength="6" maxlength="20" data-caution="请填写密码，6-20个字符&&输入不正确，最少6个字符&&输入不正确，最多20个字符">
+                                <i class="iconfont icon-suo"></i>
+                                <div class="password-check">
+                                    <q>安全程度</q>
+                                    <span class="progress">
+                                        <em class="weak">弱</em><em class="good">中</em><em class="strong">强</em>
+                                    </span>
+                                </div>
+                            </span>
+                        </li>
+                        <li class="form-row">
+                            <label class="form-label"><em>*</em>确认密码</label>
+                            <span class="form-act has-figure">
+                                <input type="password" class="input-block" name="pam_user[pwd_confirm]" id="" maxlength="20"
+                                    placeholder="再次填写密码" required data-equalto="pam_user[password]" data-caution="密码与确认密码不相符，请重新填写">
+                                <i class="iconfont icon-suo"></i>
+                            </span>
+                        </li>
+                        <li class="form-row verify-code action-verifycode">
+                            <label class="form-label"><em>*</em>验证码</label>
+                            <span class="form-act">
+                                <input type="text" class="verify-input input-st" name="verifycode" id="iptlogin"
+                                    required size="4" maxlength="4">
+                                <img align="absmiddle" class="auto-change-verify-handle" id="membervocde" src="http://www.anitoys.com/wap/vcode.html?key=topc_signup"
+                                    alt="验证码" width="100" height="30">
+                                <div class="inline auto-change-verify-handle">
+                                    <div>看不清？</div><a href="javascript:void(0);">换一张</a>
+                                </div>
+                            </span>
+                        </li>
+                        <li class="form-row verify-code action-mobile-verify hide">
+                            <label class="form-label"><em>*</em>手机验证码</label>
+                            <span class="form-act">
+                                <input type="text" name="vcode" id="" class="verify-input input-st">
+                                <a href="http://www.anitoys.com/passport-sendVcode.html" class="btn btn-simple action-get-verifycode"><span><span>发送验证码</span></span></a>
+                            </span>
+                        </li>
+                        <li class="form-row">
+                            <label class="form-label">&nbsp;</label>
+                            <span class="form-act">
+                                <input type="checkbox" class="x-checkbox" name="license" id="for_license" data-validate="onerequired"
+                                    data-caution="请选择同意">
+                                <label for="for_license">我已阅读并同意<a href="javascript:void(0);" class="action-open-dialog">《会员注册协议》</a></label>
+                            </span>
+                        </li>
+                        <li class="form-row">
+                            <label class="form-label">&nbsp;</label>
+                            <span class="form-act">
+                                <button type="submit" class="btn btn-import btn-block" rel="_request"><span><span>立即注册</span></span></button>
+                            </span>
+                        </li>
+
+                        <li class="form-row">
+                            <label class="form-label">&nbsp;</label>
+                            <span class="form-act">
+                                <a class="link-color to-login" href="login.html">已有账号？去登录
+                                    &raquo;</a>
+                            </span>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="footer">
+        有任何购物问题请联系我们在线客服 | 电话：021-55135395 | 工作时间：周一至周五 09:30－18:00
+        <p>©2017 阿尼托 上海索罗游信息技术有限公司 anitoys.com 版权所有</p>
+        <div style="text-align: center;">沪ICP备11047967号-18</div>
+    </div>
+</body>
+
+</html>

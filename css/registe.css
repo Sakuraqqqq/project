@@ -1,0 +1,34 @@
+.logo {
+    margin-top: 24px;
+}
+
+.soloyo-signup .form-tip-horizontal .form-act {
+    width: 300px;
+}
+
+.soloyo-signup .header-title {
+    padding-left: 60px;
+    color: #333;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.btn-import>span {
+    background: #ff6600;
+}
+
+.btn-import:hover>span,
+.btn-import:focus>span {
+    background: #e66611;
+}
+.form-row span{
+    position: relative;
+}
+.form-row i{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}
+.footer{
+    text-align: center;
+}
