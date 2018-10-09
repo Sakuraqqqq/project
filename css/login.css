@@ -1,44 +1,255 @@
-.main {
-    padding: 0;
+/* 公共css */
+html {
+    min-width: 1300px;
     background: #fff;
 }
 
-.header .col-lg-4 {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+fieldset,
+form,
+input,
+select,
+textarea,
+button,
+figure {
+    margin: 0;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 75%;
+    line-height: 1.5;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+a img,
+iframe {
+    border: 0 none;
+}
+
+address,
+em,
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.commonBox {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* header */
+.header .login-left {
     width: 250px;
-}
-
-.header .col-lg-4 img {
-    display: block;
-    max-width: 100%;
-}
-
-.logo {
     margin-top: 24px;
 }
 
-.header .col-lg-9 {
-    width: 680px;
+.login-left a {
+    display: block;
+    height: 69px;
 }
 
-.btn-import>span {
-    background: #ff6600;
+/* main */
+.main{
+    overflow: hidden;
+}
+.main-left {
+    float: left;
+    width: 665px;
+    margin-left: 10px;
 }
 
-.btn-import:hover>span,
-.btn-import:focus>span {
-    background: #e66611;
+.main-img {
+    background: url(http://upload2016.anitoys.com/FjSta2JDyEt9VgWZrTJ5qbzIJqH5);
+    background-size: cover;
+    background-position: center;
+    height: 365px;
 }
-.link-color {
-    color: #666666;
+
+.main-right {
+    width: 440px;
+    margin-left: 10px;
+    float: left;
+    padding: 15px 0;
+    background: white;
+    border-radius: 5px;
+    font-size: 12px;
 }
-.form-row span{
+
+.login-header {
+    padding: 10px 30px 5px 30px;
+    overflow: hidden;
+}
+
+.login-header-kayname {
+    float: left;
+    font-size: 18px;
+}
+
+.go-register {
+    float: right;
+    line-height: 30px;
+}
+
+.go-register a {
+    color: #666;
+    margin-left: 10px;
+}
+
+.login-form-main {
     position: relative;
+    margin: 0 30px;
+    padding-top: 40px;
 }
-.form-row i{
+
+.login-form-ul li {
+    position: static;
+    height: 55px;
+    margin-bottom: 0;
+}
+
+.login-form-ul li span {
+    margin-left: 0;
+    margin-bottom: 0;
+    position: relative;
+    display: block;
+    line-height: 34px;
+}
+
+.login-form-ul li span input {
+    padding-right: 36px;
+    width: 374px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 100%;
+    font-family: inherit;
+}
+
+.login-form-ul li span i {
     position: absolute;
-    top: 3px;
-    right: 5px;
-}
-.footer{
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
     text-align: center;
+    font-size: 18px;
+    color: #999999;
+}
+
+.login-form-ul label {
+    line-height: 2;
+    text-align: left;
+    float: none;
+    width: auto;
+}
+
+.login-form-ul .check-input {
+    width: 134px;
+    display: inline;
+    height: 30px;
+}
+
+.auto-change-verify-handle {
+    display: inline-block;
+    width: 70px;
+    vertical-align: middle;
+}
+.login-form-ul .inline{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+.login-form-ul .inline div{
+    display: inline;
+}
+.auto-login{
+    float: left;
+}
+.check-wrap{
+    margin-left: 0;
+    margin-bottom: 0;
+    position: relative;
+    display: block;
+    line-height: 34px;
+}
+.auto-login .check-wrap input{
+    position: relative;
+    top: 2px;
+    width: 13px;
+    height: 13px;
+    line-height: normal;
+    display: inline;
+}
+.forget-password{
+    float: right;
+    line-height: 34px;
+}
+.forget-password a{
+    color: #666666;
+    margin-left: 10px;
+}
+.login-btn{
+    display: block;
+    width: 100%;
+    border: 0 none;
+    background-color: transparent;
+    padding: 0;
+    outline: none;
+}
+.login-btn>span{
+    background: #ff6600;
+    border-radius: 3px;
+}
+.login-btn span{
+    color: #fff;
+}
+.trust-login{
+    padding: 30px 30px 0 30px;
+    text-align: center;
+}
+.trust-login .trust-login-keyname {
+    color: #999;
+    margin-bottom: 20px;
+}
+
+/* footer */
+.footer{
+    color: #666;
+    padding: 10px 0;
+    text-align: center;
+    line-height: 2;
 }

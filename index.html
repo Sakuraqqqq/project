@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>anitoys动漫商城</title>
-    <link rel="icon" href="http://www.anitoys.com/app/topc/statics/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="http://www.anitoys.com/app/topc/statics/favicon.ico" type="image/x-icon" />
+    <title>anijoys动漫商城</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="iconfont/iconfont.css">
-    <link rel="stylesheet" href="css/layout.css">
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -18,103 +17,85 @@
     <!-- 顶部导航 -->
 
     <div id="topnav" class="topnav">
-        <div class="topbox">
-            <div class="topnavLeft">
-                <div id="login">
-                    <a href="./">欢迎来到aniToys</a> &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="html/login.html" classs="small-signin-enter">请登录</a>
-                    <a href="html/registe.html" class="small-signup-enter" style="color:#ff6600">免费注册</a>
+        <div class="commonBox">
+            <div class="topnav-left">
+                <div class="login">
+                    <a href="./">欢迎来到anitoys</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="html/login.html">请登录</a>
+                    <a href="html/register.html" style="color:#ff6600">免费注册</a>
                 </div>
-                <div id="member" style="display:none;">
-                    您好<span id="uname_263"></span>！
-                    <a href="http://www.anitoys.com/passport-logout.html">退出</a>
-                </div>
+                <div class="member" style="display:none"></div>
             </div>
-            <div class="topnavRight">
-                <div class="subnav-clearfix">
-                    <div class="subnav-item">
-                        <a href="member-mail.html">站内信</a>
-                    </div>
-                    <div class="subnav-item">
-                        <a href="trade-list.html" class="">我的订单 &nbsp;<i class="icon"></i></a>
-                        <div class="dropdown">
-                            <ul>
-                                <li><a href="trade-finalTradeList.html">待补款订单</a></li>
-                                <li><a href="trade-list.html?waitGoods=waitGoods">已发货订单</a></li>
-                                <li><a href="member-aftersales-list.html">售后订单</a></li>
-                                <li><a href="trade-history-list.html">历史订单</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="subnav-item">
-                        <a href="member-index.html" class="">我的aniToys <i class="iconfont"></i></a>
-                        <div class="dropdown">
-                            <ul>
-                                <li><a href="member-mypoint.html">积分</a></li>
-                                <li><a href="member-address.html">收货地址</a></li>
-                                <li><a href="member-security.html">安全中心</a></li>
-                                <li><a href="member-coupon.html">优惠券</a></li>
-                                <li><a href="member-collectitems.html">收藏的商品</a></li>
-                                <li><a href="member-collectshops.html">收藏的店铺</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="subnav-item">
-                        <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDA5MTAxMV8yMzA4MzJfODAwMDkxMDExXzJf">联系客服</a>
-                    </div>
-                    <div class="subnav-item">
-                        <a href="http://old.anitoys.com">旧版补款入口</a>
-                    </div>
-                    <div class="subnav-item">
-                        <a href="" class="">关注我们 &nbsp;<i class="iconfont"></i></a>
-                        <div class="dropdown">
-                            <ul>
-                                <li><a href="http://weibo.com/anitoys">官方微博</a></li>
-                                <li><a href="http://upload2016.anitoys.com/FkTev4OjPIHsp-5OuaA5jAW0gdRE">微信公众号</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="topnav-right">
+                <ul class="right-nav">
+                    <li><a href="#">站内信</a>
+                    </li>
+                    <li><a href="#">我的订单&nbsp;<i></i></a>
+                        <ul class="option-nav">
+                            <li><a href="#">待补款订单</a></li>
+                            <li><a href="#">已发货订单</a></li>
+                            <li><a href="#">售后订单</a></li>
+                            <li><a href="#">历史订单</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">我的anitoys&nbsp;<i></i></a>
+                        <ul class="option-nav">
+                            <li><a href="#">积分</a></li>
+                            <li><a href="#">收货地址</a></li>
+                            <li><a href="#">安全中心</a></li>
+                            <li><a href="#">优惠券</a></li>
+                            <li><a href="#">收藏的商品</a></li>
+                            <li><a href="#">收藏的店铺</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">联系客服</a>
+                    </li>
+                    <li><a href="#">旧版补款入口</a>
+                    </li>
+                    <li><a href="#">关注我们&nbsp;<i></i></a>
+                        <ul class="option-nav">
+                            <li><a href="#">官方微博</a></li>
+                            <li><a href="#">微信公众号</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 
-    <!-- 头部信息 -->
+    <!-- 头部信息栏 -->
 
-    <div id="header">
-        <div class="headerBox">
-            <div class="headerImg">
+    <div id="header" class="header">
+        <div class="commonBox">
+            <div class="header-bg">
                 <div class="row">
-                    <div class="headerLeft"></div>
-                    <div class="headerCenter">
-                        <div class="searchInp">
-                            <form action="http://www.anitoys.com/search.html" method="post" id="goods_search">
+                    <div class="header-left"></div>
+                    <div class="header-center">
+                        <div class="search-box">
+                            <form action="http://www.anitoys.com/search.html" method="POST" id="search">
                                 <i class="iconfont icon-sousuo"></i>
-                                <input type="text" name="keyword" id="keyword" class="x-input" placeholder="请输入关键词">
-                                <input type="hidden" name="shop_id" id="shop_id" class="x-input" placeholder="商家ID">
-                                <input type="hidden" name="searchtype" id="searchtype" class="x-input" placeholder="搜索类型">
-                                <a href="javascript:void(0);" class="btn btn-search">搜索</a>
+                                <input type="text" placeholder="请输入关键词">
+                                <button>搜索</button>
                             </form>
                             <div class="hots">
-                                <span style="color:#FF8000;">热门搜索：</span>
-                                <a href="http://www.anitoys.com/list.html?n=Fate" style="color:#FF8000;">Fate系列</a>
-                                <a href="http://www.anitoys.com/list.html?n=%E5%AE%88%E6%9C%9B%E5%85%88%E9%94%8B" style="color:#FF8000;">守望先锋</a>
-                                <a href="http://www.anitoys.com/list.html?n=%E5%88%9D%E9%9F%B3%E6%9C%AA%E6%9D%A5" style="color:#FF8000;">初音未来</a>
-                                <a href="http://www.anitoys.com/list.html?n=%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B" style="color:#FF8000;">全职高手</a>
-                                <a href="http://www.anitoys.com/list.html?n=%E5%88%80%E5%89%91%E4%B9%B1%E8%88%9E" style="color:#FF8000;">刀剑乱舞</a>
-                                <a href="http://www.anitoys.com/list.html?n=%E7%B2%BE%E7%81%B5%E5%AE%9D%E5%8F%AF%E6%A2%A6"
-                                    style="color:#FF8000;">精灵宝可梦</a>
+                                <span>热门搜索：</span>
+                                <a href="#">Fate系列</a>
+                                <a href="#">守望先锋</a>
+                                <a href="#">初音未来</a>
+                                <a href="#">全职高手</a>
+                                <a href="#">刀剑乱舞</a>
+                                <a href="#">精灵宝可梦</a>
                             </div>
                         </div>
                     </div>
-                    <div class="headerRight">
-                        <div class="minicart" id="minicart_">
-                            <a href="http://www.anitoys.com/cart.html" class="btn btn-simple btn-lg">
+                    <div class="header-right">
+                        <div class="shop-car">
+                            <a href="#" class="car-btn">
                                 <span>
                                     <span>
-                                        <i class="iconfont icon-gouwuche">
-                                            <b data-type="1" class="up-cat-number">0</b>
-                                        </i>
+                                        <i class="iconfont icon-gouwuche"></i>
+                                        <b class="car-number">0</b>
                                         去购物车结算
                                     </span>
                                 </span>
@@ -128,1047 +109,1343 @@
 
     <!-- 页面导航栏 -->
 
-    <div id="nav">
-        <div class="navBox">
-            <div class="row">
-                <div class="navLeft">
-                    <div class="bigCase">
-                        <a href="#">全部周边</a>
+    <div id="nav" class="nav">
+        <div class="commonBox">
+            <div class="rows">
+                <div class="nav-left">
+                    <a href="#">所有周边</a>
+                </div>
+                <ul class="nav-main">
+                    <li><a href="#" class="on">首页</a></li>
+                    <li><a href="#">旧版补款入口</a></li>
+                    <li><a href="#">新品预售</a></li>
+                    <li><a href="#">现货</a></li>
+                    <li><a href="#">优惠券</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主内容 -->
+
+    <div id="main" class="main">
+        <div class="commonBox">
+            <div class="main-top">
+                <div class="main-left">
+                    <ul class="main-nav">
+                        <li>
+                            <div class="main-nav-item">
+                                <a href="#">
+                                    <em>|</em>
+                                    手办/模型/玩偶
+                                </a>
+                            </div>
+                            <ul class="main-nav-hover">
+                                <li>
+                                    <div class="main-nav-title">手办</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">粘土人</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">可动小比例</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">等比例手办</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">盒蛋/扭蛋</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="main-nav-title">模型</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">普通模型</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">拼装模型</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">车模</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="main-nav-title">玩偶</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">玩偶</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div class="main-nav-item">
+                                <a href="#">
+                                    <em>|</em>
+                                    角色周边/文具办公/日用家居
+                                </a>
+                            </div>
+                            <ul class="main-nav-hover">
+                                <li>
+                                    <div class="main-nav-title">角色周边</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">服装</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">挂件</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">徽章</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">钥匙圈</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">鼠标垫</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">海报/挂画</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">手机配件</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">其他周边</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="main-nav-title">文具办公</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">书签</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">胶带</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">贴纸</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">笔记本</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">文件夹</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">明信片</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">书写工具</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="main-nav-title">日用家居</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">围巾/毛巾</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">镜子</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">抱枕靠垫</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">床单毛毯</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">餐饮器具</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">整理收纳</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="main-nav-title">箱包装饰</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">零钱包</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">手提包</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">双肩包</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div class="main-nav-item">
+                                <a href="#">
+                                    <em>|</em>
+                                    演出票务/官方周边
+                                </a>
+                            </div>
+                            <ul class="main-nav-hover">
+                                <li>
+                                    <div class="main-nav-title">票务</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">演唱会</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">见面会</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">展览会</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="main-nav-title">官方周边</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">荧光棒</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">服装</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">徽章/挂件/钥匙圈</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">写真</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">手帕/手巾</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">零钱包/手提包</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">其他周边</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div class="main-nav-item">
+                                <a href="#">
+                                    <em>|</em>
+                                    其他
+                                </a>
+                            </div>
+                            <ul class="main-nav-hover">
+                                <li>
+                                    <div class="main-nav-title">服务</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">费用</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div class="main-nav-item">
+                                <a href="#">
+                                    <em>|</em>
+                                    更多
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-center">
+                    <div class="main-banner">
+                        <div class="main-banner-img">
+                            <ul class="main-img-box">
+                                <li><a href="#"><img src="images/banner_1.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="images/banner_2.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="images/banner_3.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="images/banner_4.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="images/banner_5.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="images/banner_6.jpg" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="main-banner-prc">
+                            <li class="active"></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </div>
                     </div>
-                    <div class="category is-display" id="category_box">
-                        <ul class="category-primary">
+                </div>
+                <script>
+                    var show = new ShowImg('.main-banner');
+                    show.showImg();
+                </script>
+                <div class="main-right">
+                    <div class="main-news">
+                        <h3>
+                            最新情报
+                            <div class="news-more">
+                                <a href="#">更多<i>></i></a>
+                            </div>
+                        </h3>
+                        <ul class="main-news-box">
                             <li>
-                                <div class="category-primary-item">
-
-                                    <a href="http://www.anitoys.com/topics-1.html">
-                                        <em>|</em>
-                                        手办/模型/玩偶 </a>
-
-                                </div>
-                                <div class="category-sub">
-                                    <div class="category-sub-item">
-                                        <div class="category-sub-title">手办</div>
-                                        <ul>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=3">粘土人</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=4">可动小比例</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=5">等比例手办</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=6">盒蛋/扭蛋</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                        </ul>
-                                    </div>
-                                    <div class="category-sub-item">
-                                        <div class="category-sub-title">模型</div>
-                                        <ul>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=11">普通模型</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=12">拼装模型</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=56">车模</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                        </ul>
-                                    </div>
-                                    <div class="category-sub-item">
-                                        <div class="category-sub-title">玩偶</div>
-                                        <ul>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=14">玩偶</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <a href="#" title="9月25日-9月30日 补款汇总">
+                                    <i>></i> 9月25日-9月30日 补款汇总</a>
                             </li>
                             <li>
-                                <div class="category-primary-item">
-
-                                    <a href="http://www.anitoys.com/topics-7.html">
-                                        <em>|</em>
-                                        角色周边/文具办公/日用家居 </a>
-
-                                </div>
-                                <div class="category-sub">
-                                    <div class="category-sub-item">
-                                        <div class="category-sub-title">角色周边</div>
-                                        <ul>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=25">服装</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=15">挂件</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=19">徽章</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=53">钥匙圈</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=55">鼠标垫</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=24">海报/挂画</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=71">手机配件</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=9">其它周边</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                        </ul>
-                                    </div>
-                                    <div class="category-sub-item">
-                                        <div class="category-sub-title">文具办公</div>
-                                        <ul>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=39">书签</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=40">胶带</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=41">贴纸</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=44">笔记本</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=42">文件夹</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=45">明信片</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=43">书写工具</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                        </ul>
-                                    </div>
-                                    <div class="category-sub-item">
-                                        <div class="category-sub-title">日用家居</div>
-                                        <ul>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=54">围巾/毛巾</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=49">镜子</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=50">抱枕靠垫</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=48">床单毛毯</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=47">餐饮器具</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=57">整理收纳</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                        </ul>
-                                    </div>
-                                    <div class="category-sub-item">
-                                        <div class="category-sub-title">箱包袋饰</div>
-                                        <ul>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=52">零钱包</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=61">手提包</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=70">双肩包</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <a href="#" title="9月25日-9月30日  新品汇总">
+                                    <i>></i> 9月25日-9月30日 新品汇总</a>
                             </li>
                             <li>
-                                <div class="category-primary-item">
-
-                                    <a href="http://www.anitoys.com/topics-20.html">
-                                        <em>|</em>
-                                        演出票务/官方周边
-                                    </a>
-
-                                </div>
-                                <div class="category-sub">
-                                    <div class="category-sub-item">
-                                        <div class="category-sub-title">票务</div>
-                                        <ul>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=22">演唱会</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=59">见面会</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=60">展览会</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                        </ul>
-                                    </div>
-                                    <div class="category-sub-item">
-                                        <div class="category-sub-title">官方周边</div>
-                                        <ul>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=64">荧光棒</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=63">服装</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=65">徽章/挂件/钥匙圈</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=66">写真</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=67">手帕/毛巾</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=68">零钱包/手提包</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=69">其它周边</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <a href="#" title="aniToys 9月30日 新品汇总">
+                                    <i>></i> aniToys 9月30日 新品汇总</a>
                             </li>
                             <li>
-                                <div class="category-primary-item">
-
-                                    <a href="http://www.anitoys.com/topics-16.html">
-                                        <em>|</em>
-                                        其它 </a>
-
-                                </div>
-                                <div class="category-sub">
-                                    <div class="category-sub-item">
-                                        <div class="category-sub-title">服务</div>
-                                        <ul>
-                                            <li><a href="http://www.anitoys.com/list.html?cat_id=18">费用</a>&nbsp;&nbsp;&nbsp;&nbsp;<em>|</em></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <a href="#" title="aniToys 9月28日 新品汇总">
+                                    <i>></i> aniToys 9月28日 新品汇总</a>
                             </li>
                             <li>
-                                <div class="category-primary-item more-goods">
-                                    <a href="http://www.anitoys.com/list.html">
-                                        <em>|</em>
-                                        更多
-                                    </a>
-                                </div>
+                                <a href="#" title="aniToys 9月28日 补款汇总">
+                                    <i>></i> aniToys 9月28日 补款汇总</a>
                             </li>
-
+                            <li>
+                                <a href="#" title="aniToys 9月27日 新品汇总">
+                                    <i>></i> aniToys 9月27日 新品汇总</a>
+                            </li>
+                            <li>
+                                <a href="#" title="aniToys仓库&客服2018国庆期间放假公告">
+                                    <i>></i> aniToys仓库&客服2018国庆期间放假公告</a>
+                            </li>
+                            <li>
+                                <a href="#" title="aniToys 9月27日 补款汇总">
+                                    <i>></i> aniToys 9月27日 补款汇总</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
-
-                <div class="navRight">
-                    <div class="menu">
-                        <a class="on" href="http://www.anitoys.com">首页</a>
-                        <a href="http://old.anitoys.com">旧版补款入口</a>
-                        <a href="http://www.anitoys.com/list.html?r_sort=item_id+desc&operationtype=replace&use_platform=0%252C1&sort=item_id%2520desc&activity_type=presale">新品预售</a>
-                        <a href="http://www.anitoys.com/list.html?r_sort=item_id+desc&operationtype=replace&use_platform=0%252C1&sort=item_id%2520desc&activity_type=normal">现货</a>
-                        <a href="http://www.anitoys.com/topics-coupons.html">优惠券</a></div>
-                </div>
             </div>
-        </div>
-    </div>
 
-    <!-- 轮播部分 -->
-
-    <div id="banner">
-        <div class="bannerBox">
-            <div class="bannerImg">
-                <div class="imgBox">
-                    <ul>
-                        <li><a href="#"><img src="images/banner_1.jpg" alt=""></a></li>
-                        <li><a href="#"><img src="images/banner_2.jpg" alt=""></a></li>
-                        <li><a href="#"><img src="images/banner_3.jpg" alt=""></a></li>
-                        <li><a href="#"><img src="images/banner_4.jpg" alt=""></a></li>
-                        <li><a href="#"><img src="images/banner_5.jpg" alt=""></a></li>
-                        <li><a href="#"><img src="images/banner_6.jpg" alt=""></a></li>
-                        <li><a href="#"><img src="images/banner_1.jpg" alt=""></a></li>
-                    </ul>
-                    <div class="imgPre">
-                        <a href="#" class="active"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="bannerNews">
-                <h3>最新情报<div class="latest-news-more"><a class="get-more" href="http://www.anitoys.com/content-index.html?node_id=2">更多</a><i
-                            class="iconfont"> > </i></div>
-                </h3>
-                <div class="latest-news-box">
-                    <ul>
-                        <li>
-                            <a href="http://www.anitoys.com/content-info.html?article_id=979" title="9月25日-9月30日 补款汇总"><i
-                                    class="iconfont"> > </i> 9月25日-9月30日 补款汇总
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.anitoys.com/content-info.html?article_id=978" title="9月25日-9月30日  新品汇总"><i
-                                    class="iconfont"> > </i> 9月25日-9月30日 新品汇总
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.anitoys.com/content-info.html?article_id=977" title="aniToys 9月30日 新品汇总"><i
-                                    class="iconfont"> > </i> aniToys 9月30日 新品汇总
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.anitoys.com/content-info.html?article_id=976" title="aniToys 9月28日 新品汇总"><i
-                                    class="iconfont"> > </i> aniToys 9月28日 新品汇总
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.anitoys.com/content-info.html?article_id=975" title="aniToys 9月28日 补款汇总"><i
-                                    class="iconfont"> > </i> aniToys 9月28日 补款汇总
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.anitoys.com/content-info.html?article_id=974" title="aniToys 9月27日 新品汇总"><i
-                                    class="iconfont"> > </i> aniToys 9月27日 新品汇总
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.anitoys.com/content-info.html?article_id=973" title="aniToys仓库&客服2018国庆期间放假公告"><i
-                                    class="iconfont"> > </i> aniToys仓库&客服2018国庆期间放假公告
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.anitoys.com/content-info.html?article_id=972" title="aniToys 9月27日 补款汇总"><i
-                                    class="iconfont"> > </i> aniToys 9月27日 补款汇总
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 主要部分 -->
-
-    <div id="main">
-        <div class="mainBox">
             <!-- 优惠券 -->
-            <div class="index-coupon clearfix">
-                <div class="index-coupon-title">优惠券&nbsp;&nbsp;&nbsp;Coupons</div>
-                <div class="index-coupon-box clearfix">
-                    <!-- 循环START -->
-                    <div class="index-coupon-item">
+
+            <div class="main-coupon">
+                <div class="main-coupon-title">优惠券&nbsp;&nbsp;&nbsp;Coupons</div>
+                <div class="main-coupon-box">
+                    <li>
                         <div class="coupon-top">
-                            <div class="coupon-brand">
-                                <a href="http://www.anitoys.com/shopCouponList.html?shop_id=1" class="get-coupons">
-                                    <!-- <img src="img0/FoS581JKDEKyfsH0bZOgppOz2pB6" width="32" height="32" alt=""> -->GoodSmile上海阿尼托官方旗舰店</a>
+                            <div class="coupon-top-left">
+                                <a href="#">GoodSmile上海阿尼托官方旗舰店</a>
                             </div>
-                            <div class="coupon-price"><a href="http://www.anitoys.com/shopCouponList.html?shop_id=1">￥5.00</a></div>
+                            <div class="coupon-top-right">
+                                <a href="#">￥5.00</a>
+                            </div>
                         </div>
-                        <div class="coupon-bottom"><a href="http://www.anitoys.com/shopCouponList.html?shop_id=1">Green专属优惠</a></div>
-                    </div>
-                    <div class="index-coupon-item">
+                        <div class="coupon-bottom">
+                            <a href="#">Green专属优惠</a>
+                        </div>
+                    </li>
+                    <li>
                         <div class="coupon-top">
-                            <div class="coupon-brand">
-                                <a href="http://www.anitoys.com/shopCouponList.html?shop_id=1" class="get-coupons">
-                                    <!-- <img src="img0/FoS581JKDEKyfsH0bZOgppOz2pB6" width="32" height="32" alt=""> -->GoodSmile上海阿尼托官方旗舰店</a>
+                            <div class="coupon-top-left">
+                                <a href="#">GoodSmile上海阿尼托官方旗舰店</a>
                             </div>
-                            <div class="coupon-price"><a href="http://www.anitoys.com/shopCouponList.html?shop_id=1">￥20.00</a></div>
+                            <div class="coupon-top-right">
+                                <a href="#">￥20.00</a>
+                            </div>
                         </div>
-                        <div class="coupon-bottom"><a href="http://www.anitoys.com/shopCouponList.html?shop_id=1">亚可·卡嘉莉专属优惠</a></div>
-                    </div>
-                    <div class="index-coupon-item">
+                        <div class="coupon-bottom">
+                            <a href="#">亚可·卡嘉莉专属优惠</a>
+                        </div>
+                    </li>
+                    <li>
                         <div class="coupon-top">
-                            <div class="coupon-brand">
-                                <a href="http://www.anitoys.com/shopCouponList.html?shop_id=1" class="get-coupons">
-                                    <!-- <img src="img0/FoS581JKDEKyfsH0bZOgppOz2pB6" width="32" height="32" alt=""> -->GoodSmile上海阿尼托官方旗舰店</a>
+                            <div class="coupon-top-left">
+                                <a href="#">GoodSmile上海阿尼托官方旗舰店</a>
                             </div>
-                            <div class="coupon-price"><a href="http://www.anitoys.com/shopCouponList.html?shop_id=1">￥15.00</a></div>
+                            <div class="coupon-top-right">
+                                <a href="#">￥5.00</a>
+                            </div>
                         </div>
-                        <div class="coupon-bottom"><a href="http://www.anitoys.com/shopCouponList.html?shop_id=1">红之Saber专属优惠</a></div>
-                    </div>
-                    <div class="index-coupon-item">
+                        <div class="coupon-bottom">
+                            <a href="#">纲手专属优惠</a>
+                        </div>
+                    </li>
+                    <li>
                         <div class="coupon-top">
-                            <div class="coupon-brand">
-                                <a href="http://www.anitoys.com/shopCouponList.html?shop_id=1" class="get-coupons">
-                                    <!-- <img src="img0/FoS581JKDEKyfsH0bZOgppOz2pB6" width="32" height="32" alt=""> -->GoodSmile上海阿尼托官方旗舰店</a>
+                            <div class="coupon-top-left">
+                                <a href="#">GoodSmile上海阿尼托官方旗舰店</a>
                             </div>
-                            <div class="coupon-price"><a href="http://www.anitoys.com/shopCouponList.html?shop_id=1">￥5.00</a></div>
+                            <div class="coupon-top-right">
+                                <a href="#">￥15.00</a>
+                            </div>
                         </div>
-                        <div class="coupon-bottom"><a href="http://www.anitoys.com/shopCouponList.html?shop_id=1">国庆专属优惠券
-                                5元</a></div>
-                    </div>
-                    <!-- 循环END -->
+                        <div class="coupon-bottom">
+                            <a href="#">红之Saber专属优惠</a>
+                        </div>
+                    </li>
                 </div>
             </div>
 
-            <!-- 1f -->
+            <!-- 1F -->
 
-            <div class="index-floor-1 clearfix">
-                <div class="floor-1-title floor-item-title" style="background: #ff6600"><strong>1F</strong>人气商品&nbsp;&nbsp;Popular</div>
-                <div class="floor-1-left clearfix">
-                    <a href="http://www.anitoys.com/index.php/item.html?item_id=3255">
-                        <img width="260" height="450" src="http://upload2016.anitoys.com/FrA0TWcixJW3GD5Q-zQfP6YYRzlg"
-                            app="topc" data-original="http://upload2016.anitoys.com/FrA0TWcixJW3GD5Q-zQfP6YYRzlg" class="imglazyload"
-                            alt="粘土人 哈利波特（附特典）" /></a>
-                    <div class="pt-mask-lg">粘土人 哈利波特（附特典）</div>
+            <div class="floor">
+                <div class="floor-title">
+                    <strong>1F</strong>
+                    人气商品&nbsp;&nbsp;Popular
                 </div>
-                <div class="floor-1-right clearfix">
-                    <ul class="clearfix">
-                        <!--循环START-->
-                        <li><a href="http://www.anitoys.com/item.html?item_id=3169"><img width="220" height="220" src="http://upload2016.anitoys.com/Fol2PWF8TaR2RrJ39jD2MFV5zDLT_s.jpg"
-                                    alt="粘土人 Caster/吉尔伽美什 灵基再临 Ver."></a>
+                <div class="floor-left">
+                    <a href="#">
+                        <img src="http://upload2016.anitoys.com/FrBUlmchVDFKogqPRMhPobiN1HE0" alt="粘土人 哈利波特（附特典）">
+                    </a>
+                    <div class="hover-out">
+                        <p>粘土人 哈利波特（附特典）</p>
+                    </div>
+                </div>
+                <div class="floor-right">
+                    <ul class="floor-ul">
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fol2PWF8TaR2RrJ39jD2MFV5zDLT_s.jpg" alt="粘土人 Caster/吉尔伽美什 灵基再临 Ver.">
+                            </a>
                             <div class="pt-mask">
                                 <h5>粘土人 Caster/吉尔伽美什 灵基再临 Ver.</h5>
                                 <p>￥358.00</p>
                             </div>
                         </li>
-                        <li><a href="http://www.anitoys.com/item.html?item_id=3156"><img width="220" height="220" src="http://upload2016.anitoys.com/FlBr2rdAzrLXXUQU5B6jfAW__u5X_s.jpg"
-                                    alt="粘土人 理世（附特典）"></a>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FlBr2rdAzrLXXUQU5B6jfAW__u5X_s.jpg" alt="粘土人 理世（附特典）">
+                            </a>
                             <div class="pt-mask">
                                 <h5>粘土人 理世（附特典）</h5>
                                 <p>￥275.00</p>
                             </div>
                         </li>
-                        <li><a href="http://www.anitoys.com/item.html?item_id=3155"><img width="220" height="220" src="http://upload2016.anitoys.com/Fl0cM3XwyvqqafRNv9eJSSYD5plx_s.jpg"
-                                    alt="粘土人 初音未来 Magical Mirai 2017Ver."></a>
+                        <li>
+                            <a href="#">>
+                                <img src="http://upload2016.anitoys.com/Fl0cM3XwyvqqafRNv9eJSSYD5plx_s.jpg" alt="粘土人 初音未来 Magical Mirai 2017Ver.">
+                            </a>
                             <div class="pt-mask">
                                 <h5>粘土人 初音未来 Magical Mirai 2017Ver.</h5>
                                 <p>￥350.00</p>
                             </div>
                         </li>
-                        <li><a href="http://www.anitoys.com/item.html?item_id=3122"><img width="220" height="220" src="http://upload2016.anitoys.com/FvdqvzhmhywFNQrrR6BW0jw8Z33M_s.jpg"
-                                    alt="粘土人 空条承太郎(附特典）"></a>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FvdqvzhmhywFNQrrR6BW0jw8Z33M_s.jpg" alt="粘土人 空条承太郎(附特典）">
+                            </a>
                             <div class="pt-mask">
                                 <h5>粘土人 空条承太郎(附特典）</h5>
                                 <p>￥299.00</p>
                             </div>
                         </li>
-                        <li><a href="http://www.anitoys.com/item.html?item_id=3118"><img width="220" height="220" src="http://upload2016.anitoys.com/Fhqqoiu5GLe_heZ2snt8H5NZWZoy_s.jpg"
-                                    alt="赫萝　狼与香辛料10周年纪念 Ver.(附特典）"></a>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fhqqoiu5GLe_heZ2snt8H5NZWZoy_s.jpg" alt="赫萝　狼与香辛料10周年纪念 Ver.(附特典）">
+                            </a>
                             <div class="pt-mask">
                                 <h5>赫萝　狼与香辛料10周年纪念 Ver.(附特典）</h5>
                                 <p>￥979.00</p>
                             </div>
                         </li>
-                        <li><a href="http://www.anitoys.com/item.html?item_id=3109"><img width="220" height="220" src="http://upload2016.anitoys.com/FmedN8ewN4qbZBBFyZU8najUQp6a_s.jpg"
-                                    alt="figma 惠惠(附特典）"></a>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FmedN8ewN4qbZBBFyZU8najUQp6a_s.jpg" alt="figma 惠惠(附特典）">
+                            </a>
                             <div class="pt-mask">
                                 <h5>figma 惠惠(附特典）</h5>
                                 <p>￥458.00</p>
                             </div>
                         </li>
-                        <li><a href="http://www.anitoys.com/item.html?item_id=3040"><img width="220" height="220" src="http://upload2016.anitoys.com/Fu3r7dryXPjzavLe1cb_8mZw6QkU_s.jpg"
-                                    alt="figma Fox（附特典）"></a>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fu3r7dryXPjzavLe1cb_8mZw6QkU_s.jpg" alt="figma Fox (附特典）">
+                            </a>
                             <div class="pt-mask">
-                                <h5>figma Fox（附特典）</h5>
+                                <h5>figma Fox (附特典）</h5>
                                 <p>￥427.00</p>
                             </div>
                         </li>
-                        <li><a href="http://www.anitoys.com/item.html?item_id=2995"><img width="220" height="220" src="http://upload2016.anitoys.com/Fs6S5IC_v0e8Zycq9GeWtNm0zrxv_s.jpg"
-                                    alt="Saber/阿尔托莉雅・潘德拉贡〔Alter〕＆Cuirassier・Noir"></a>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fs6S5IC_v0e8Zycq9GeWtNm0zrxv_s.jpg" alt="Saber/阿尔托莉雅・潘德拉贡〔Alter〕＆Cuirassier・Noir">
+                            </a>
                             <div class="pt-mask">
                                 <h5>Saber/阿尔托莉雅・潘德拉贡〔Alter〕＆Cuirassier・Noir</h5>
                                 <p>￥1146.00</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 2F -->
+
+            <div class="floor">
+                <div class="floor-title" style="background:#808080">
+                    <strong>2F </strong>
+                    GSC新品&nbsp;&nbsp;New Products
+                </div>
+                <div class="floor-left">
+                    <a href="#">
+                        <img src="http://upload2016.anitoys.com/FowXvGvc-HX__0M5tObwI_egdyv8" alt="粘土人 志摩凛 DX Ver." />
+                    </a>
+                    <div class="hover-out">
+                        <p>粘土人 志摩凛 DX Ver.</p>
+                    </div>
+                </div>
+                <div class="floor-right">
+                    <ul class="floor-ul">
+                        <!--循环START-->
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FuZ9W5dUa8AswDujkgojlnPupR-6_s.jpg" alt="亚可·卡嘉莉 ">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>亚可·卡嘉莉 </h5>
+                                <p>￥965.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FuxcaXbGGXq004v0MProvo_KE3C2_s.jpg" alt="粘土人 Green（附特典）">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>粘土人 Green（附特典）</h5>
+                                <p>￥346.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FuEFVLBg0_Sdcvg_eIsrT_IpiYG3_s.jpg" alt="figma 红之Saber">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>figma 红之Saber</h5>
+                                <p>￥552.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FldbY_4esLAbPbk5Tc34Cn-6raby_s.jpg" alt="粘土人 纲手">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>粘土人 纲手</h5>
+                                <p>￥269.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FoHEFX2kB0eZ4TwqTgrDHFRNl9ma_s.jpg" alt="Dioramansion 150 RACING MIKU 2018Ver. 修理站 替换面板  超级索尼子Ver./Rd.5 FUJI/Su">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>Dioramansion 150 RACING MIKU 2018Ver. 修理站 替换面板 超级索尼子Ver./Rd.5 FUJI/Su</h5>
+                                <p>￥122.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Frof7OJ2sEOtJbpnveWfxM-WopO3_s.jpg" alt="粘土人 则卷阿拉蕾 猫耳Ver.＆则卷宝瓜（附特典）">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>粘土人 则卷阿拉蕾 猫耳Ver.＆则卷宝瓜（附特典）</h5>
+                                <p>￥299.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FsE6PuqVQb2qDY0b0jG4kdb5DwPw_s.jpg" alt="玲花 兔女郎Ver.">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>玲花 兔女郎Ver.</h5>
+                                <p>￥1630.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fofsnolr_J1YfbnmeVecgx9px0xz_s.jpg" alt="从漫画了解FGO！盒蛋 （再贩）">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>从漫画了解FGO！盒蛋 （再贩）</h5>
+                                <p>￥228.00</p>
                             </div>
                         </li>
                         <!-- 循环END -->
                     </ul>
                 </div>
             </div>
-            <div class="cb">
-                <div class="index-floor-1 clearfix">
-                    <div class="floor-1-title floor-item-title" style="background: #808080"><strong>2F </strong>GSC新品&nbsp;&nbsp;New
-                        Products</div>
-                    <div class="floor-1-left clearfix">
-                        <a href="http://www.anitoys.com/index.php/item.html?item_id=3220">
-                            <img width="260" height="450" src="http://upload2016.anitoys.com/FowXvGvc-HX__0M5tObwI_egdyv8"
-                                app="topc" data-original="http://upload2016.anitoys.com/FowXvGvc-HX__0M5tObwI_egdyv8"
-                                class="imglazyload" alt="粘土人 志摩凛 DX Ver." /></a>
-                        <div class="pt-mask-lg">粘土人 志摩凛 DX Ver.</div>
-                    </div>
-                    <div class="floor-1-right clearfix">
-                        <ul class="clearfix">
-                            <!--循环START-->
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3317"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FuZ9W5dUa8AswDujkgojlnPupR-6_s.jpg" alt="亚可·卡嘉莉 "></a>
-                                <div class="pt-mask">
-                                    <h5>亚可·卡嘉莉 </h5>
-                                    <p>￥965.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3310"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FuxcaXbGGXq004v0MProvo_KE3C2_s.jpg" alt="粘土人 Green（附特典）"></a>
-                                <div class="pt-mask">
-                                    <h5>粘土人 Green（附特典）</h5>
-                                    <p>￥346.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3309"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FuEFVLBg0_Sdcvg_eIsrT_IpiYG3_s.jpg" alt="figma 红之Saber"></a>
-                                <div class="pt-mask">
-                                    <h5>figma 红之Saber</h5>
-                                    <p>￥552.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3308"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FldbY_4esLAbPbk5Tc34Cn-6raby_s.jpg" alt="粘土人 纲手"></a>
-                                <div class="pt-mask">
-                                    <h5>粘土人 纲手</h5>
-                                    <p>￥269.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3307"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FoHEFX2kB0eZ4TwqTgrDHFRNl9ma_s.jpg" alt="Dioramansion 150 RACING MIKU 2018Ver. 修理站 替换面板  超级索尼子Ver./Rd.5 FUJI/Su"></a>
-                                <div class="pt-mask">
-                                    <h5>Dioramansion 150 RACING MIKU 2018Ver. 修理站 替换面板 超级索尼子Ver./Rd.5 FUJI/Su</h5>
-                                    <p>￥122.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3306"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Frof7OJ2sEOtJbpnveWfxM-WopO3_s.jpg" alt="粘土人 则卷阿拉蕾 猫耳Ver.＆则卷宝瓜（附特典）"></a>
-                                <div class="pt-mask">
-                                    <h5>粘土人 则卷阿拉蕾 猫耳Ver.＆则卷宝瓜（附特典）</h5>
-                                    <p>￥299.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3305"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FsE6PuqVQb2qDY0b0jG4kdb5DwPw_s.jpg" alt="玲花 兔女郎Ver."></a>
-                                <div class="pt-mask">
-                                    <h5>玲花 兔女郎Ver.</h5>
-                                    <p>￥1630.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3304"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fofsnolr_J1YfbnmeVecgx9px0xz_s.jpg" alt="从漫画了解FGO！盒蛋 （再贩）"></a>
-                                <div class="pt-mask">
-                                    <h5>从漫画了解FGO！盒蛋 （再贩）</h5>
-                                    <p>￥228.00</p>
-                                </div>
-                            </li>
-                            <!-- 循环END -->
-                        </ul>
+
+            <!-- 小banner -->
+
+            <div class="little-banner">
+                <a href="#">
+                    <img src="http://upload2016.anitoys.com/Fvn_84a18DjgOz1K0FVXlxgsnp73" alt="">
+                </a>
+            </div>
+
+            <!-- 3F -->
+
+            <div class="floor-3">
+                <div class="floor-title" style="background:#808080">
+                    <strong>4F</strong>
+                    官方特典&nbsp;&nbsp;Official Bonus
+                </div>
+                <div class="floor-3-left">
+                    <a href="#">
+                        <img src="http://upload2016.anitoys.com/FqhOs-sy-CMBSVojp7CAbKPu5_NP" alt="粘土人 鲶尾藤四郎（附特典）" />
+                    </a>
+                    <div class="hover-out">
+                        <p>粘土人 鲶尾藤四郎（附特典）</p>
                     </div>
                 </div>
-
-                <div class="little-banner">
-                    <a href="">
-                        <img width="1200" height="100" src="http://upload2016.anitoys.com/Fvn_84a18DjgOz1K0FVXlxgsnp73"
-                            app="topc" data-original="http://upload2016.anitoys.com/Fvn_84a18DjgOz1K0FVXlxgsnp73" class="imglazyload"
-                            alt="" /> </a>
+                <div class="floor-3-right">
+                    <ul class="floor-ul">
+                        <!--循环START-->
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FuxcaXbGGXq004v0MProvo_KE3C2_s.jpg" alt="粘土人 Green（附特典） ">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>粘土人 Green（附特典）</h5>
+                                <p>346.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Frof7OJ2sEOtJbpnveWfxM-WopO3_s.jpg" alt="粘土人 则卷阿拉蕾 猫耳Ver.＆则卷宝瓜（附特典）">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>粘土人 则卷阿拉蕾 猫耳Ver.＆则卷宝瓜（附特典）</h5>
+                                <p>299.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FoHb_umJ8k3N3I9pgoOkXQTnTK_0_s.jpg" alt="黑之Rider-圣杯大战-（附特典）（二次受注）">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>黑之Rider-圣杯大战-（附特典）（二次受注）</h5>
+                                <p>1149.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fvfi7HGpejvYxZZU5hQk15z1ddmO_s.jpg" alt="粘土人 鲶尾藤四郎（附特典）">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>粘土人 鲶尾藤四郎（附特典）</h5>
+                                <p>281.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FuugzLy6Ie-T4XnaAiemfaAZZ0jb_s.jpg" alt="粘土人 黑濑陆（附特典）">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>粘土人 黑濑陆（附特典）</h5>
+                                <p>287.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fm5eozsCmfZRF2wea0kPYXTZiH6I_s.jpg" alt="粘土人 志摩凛 DX Ver.（附特典）">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>粘土人 志摩凛 DX Ver.（附特典）</h5>
+                                <p>433.00</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- 小型banner -->
-            <div class="cb">
-                <div class="index-floor-3 clearfix">
-                    <div class="floor-3-title floor-item-title" style="background: #808080"><strong>4F</strong>官方特典&nbsp;&nbsp;Official
-                        Bonus</div>
-                    <div class="floor-3-left">
-                        <a href="http://www.anitoys.com/item.html?item_id=3296">
-                            <img width="500" height="450" src="http://upload2016.anitoys.com/FqhOs-sy-CMBSVojp7CAbKPu5_NP"
-                                app="topc" data-original="http://upload2016.anitoys.com/FqhOs-sy-CMBSVojp7CAbKPu5_NP"
-                                class="imglazyload" alt=" 粘土人 鲶尾藤四郎（附特典）" /></a>
-                        <div class="pt-mask-lg"> 粘土人 鲶尾藤四郎（附特典）</div>
-                    </div>
-                    <div class="floor-3-right clearfix">
-                        <ul class="clearfix">
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3310"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FuxcaXbGGXq004v0MProvo_KE3C2_s.jpg" alt="粘土人 Green（附特典）"></a>
-                                <div class="pt-mask">
-                                    <h5>粘土人 Green（附特典）</h5>
-                                    <p>346.000</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3306"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Frof7OJ2sEOtJbpnveWfxM-WopO3_s.jpg" alt="粘土人 则卷阿拉蕾 猫耳Ver.＆则卷宝瓜（附特典）"></a>
-                                <div class="pt-mask">
-                                    <h5>粘土人 则卷阿拉蕾 猫耳Ver.＆则卷宝瓜（附特典）</h5>
-                                    <p>299.000</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3299"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FoHb_umJ8k3N3I9pgoOkXQTnTK_0_s.jpg" alt="黑之Rider-圣杯大战-（附特典）（二次受注）"></a>
-                                <div class="pt-mask">
-                                    <h5>黑之Rider-圣杯大战-（附特典）（二次受注）</h5>
-                                    <p>1149.000</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3296"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fvfi7HGpejvYxZZU5hQk15z1ddmO_s.jpg" alt="粘土人 鲶尾藤四郎（附特典）"></a>
-                                <div class="pt-mask">
-                                    <h5>粘土人 鲶尾藤四郎（附特典）</h5>
-                                    <p>281.000</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3294"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FuugzLy6Ie-T4XnaAiemfaAZZ0jb_s.jpg" alt="粘土人 黑濑陆（附特典）"></a>
-                                <div class="pt-mask">
-                                    <h5>粘土人 黑濑陆（附特典）</h5>
-                                    <p>287.000</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3220"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fm5eozsCmfZRF2wea0kPYXTZiH6I_s.jpg" alt="粘土人 志摩凛 DX Ver.（附特典）"></a>
-                                <div class="pt-mask">
-                                    <h5>粘土人 志摩凛 DX Ver.（附特典）</h5>
-                                    <p>433.000</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div style="text-align: center;"><span style="font-family: &quot;Microsoft Yahei&quot;; font-size: x-large;"><br /></span></div>
-                <div style="text-align: center;"><span style="font-family: &quot;Microsoft Yahei&quot;; font-size: x-large;">
+            <!-- 合作企业 -->
+
+            <div class="floor-4">
+                <div class="floor-4-top">
+                    <span>
                         <font color="#9900ff">◆</font>
-                    </span><span style="color: rgb(255, 0, 0); font-family: &quot;Microsoft Yahei&quot;; font-size: x-large;">&nbsp;</span><span
-                        style="font-family: &quot;Microsoft Yahei&quot;; font-size: x-large;">合作企业</span></div>
-                <div style="text-align: center;">
+                    </span>&nbsp;
+                    <span>合作企业</span>
+                </div>
+                <div class="floor-4-bottom">
                     <table width="1200px" border="1" cellspacing="1" cellpadding="1" style="text-align: center;"
                         bordercolor="#d2d2d2" bgcolor="#FFFFFF">
                         <tbody>
                             <tr>
-                                <td>&nbsp;<a href="http://www.anitoys.com/index.php/shopcenter.html?shop_id=1" type="url">
-                                        <img src="http://upload2016.anitoys.com/Fvbfvkt3ubQtt7w1FWoqMvUoD03b"></a></td>
-                                <td>&nbsp;<a href="http://www.anitoys.com/index.php/shopcenter.html?shop_id=9" type="url">
-                                        <img src="http://upload2016.anitoys.com/FmOIMeZQHuwSdLQ3gdB5BnXaPdT5"></a></td>
-                                <td> <a href="http://www.anitoys.com/index.php/shopcenter.html?shop_id=8" type="url">
-                                        <img src="http://upload2016.anitoys.com/FqpQ9iN4Fm-KQe5n4-KJ5jA8Hlvv"></a>&nbsp;</td>
-                                <td> <a href="http://www.anitoys.com/index.php/search.html?shop_id=4&amp;shop_cat_id=65"
-                                        type="url">
-                                        <img src="http://upload2016.anitoys.com/Fp9a22IWIMg_P1mbyHvbFJCZBOT8"></a>&nbsp;</td>
-                                <td> <a href="http://www.anitoys.com/index.php/search.html?shop_id=4&amp;shop_cat_id=91"
-                                        type="url">
-                                        <img src="http://upload2016.anitoys.com/Fmja2JIg_iaq3HaXYDbRN_SOApx6"></a>&nbsp;</td>
-                                <td>&nbsp;<a href="http://www.anitoys.com/index.php/shopcenter.html?shop_id=4" type="url">
-                                        <img src="http://upload2016.anitoys.com/FjQwctALMUMz5_uoTlR4jT0_tCbO"></a></td>
-                                <td>&nbsp;<a href="http://www.anitoys.com/index.php/shopcenter.html?shop_id=6" type="url">
-                                        <img src="http://upload2016.anitoys.com/Fh28jXNYGl9dl8MVslG6HVl9RtB0"></a></td>
+                                <td>&nbsp;
+                                    <a href="#">
+                                        <img src="http://upload2016.anitoys.com/Fvbfvkt3ubQtt7w1FWoqMvUoD03b">
+                                    </a>
+                                </td>
+                                <td>&nbsp;
+                                    <a href="#">
+                                        <img src="http://upload2016.anitoys.com/FmOIMeZQHuwSdLQ3gdB5BnXaPdT5">
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <img src="http://upload2016.anitoys.com/FqpQ9iN4Fm-KQe5n4-KJ5jA8Hlvv">
+                                    </a>&nbsp;
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <img src="http://upload2016.anitoys.com/Fp9a22IWIMg_P1mbyHvbFJCZBOT8">
+                                    </a>&nbsp;
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <img src="http://upload2016.anitoys.com/Fmja2JIg_iaq3HaXYDbRN_SOApx6">
+                                    </a>&nbsp;
+                                </td>
+                                <td>&nbsp;
+                                    <a href="#">
+                                        <img src="http://upload2016.anitoys.com/FjQwctALMUMz5_uoTlR4jT0_tCbO">
+                                    </a>
+                                </td>
+                                <td>&nbsp;
+                                    <a href="#">
+                                        <img src="http://upload2016.anitoys.com/Fh28jXNYGl9dl8MVslG6HVl9RtB0">
+                                    </a>
+                                </td>
                             </tr>
                             <tr>
-                                <td><a href="http://www.anitoys.com/index.php/search.html?shop_id=4&amp;shop_cat_id=123"
-                                        type="url">
-                                        <img src="http://upload2016.anitoys.com/Fn2GCfafeejQqTkbjwROvgSPH4YA"></a></td>
+                                <td>
+                                    <a href="#">
+                                        <img src="http://upload2016.anitoys.com/Fn2GCfafeejQqTkbjwROvgSPH4YA">
+                                    </a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
-            <!-- 2F -->
-            <div class="cb">
-                <div class="index-floor-1 clearfix">
-                    <div class="floor-1-title floor-item-title" style="background: #ff8000"><strong>5F</strong>新品推荐&nbsp;&nbsp;Recommend
-                        New Products</div>
-                    <div class="floor-1-left clearfix">
-                        <a href="http://www.anitoys.com/item.html?item_id=3085">
-                            <img width="260" height="450" src="http://upload2016.anitoys.com/FvdOJXSQdLlVtsPFgRixRAH7tMHJ"
-                                app="topc" data-original="http://upload2016.anitoys.com/FvdOJXSQdLlVtsPFgRixRAH7tMHJ"
-                                class="imglazyload" alt="绝世舞姬貂蝉 典藏手办" /></a>
-                        <div class="pt-mask-lg">绝世舞姬貂蝉 典藏手办</div>
-                    </div>
-                    <div class="floor-1-right clearfix">
-                        <ul class="clearfix">
-                            <!--循环START-->
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3315"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FtF48XpjDz8scvIWivisHCnrKxeK_s.jpg" alt="【包邮】夜啼 Scissorwalker 1/6标准比例雕像"></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】夜啼 Scissorwalker 1/6标准比例雕像</h5>
-                                    <p>￥2000.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3314"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FssUO2nywYsCGF3yds20qVrPLx4F_s.jpg" alt="【包邮】合金装备 机器忍者 1/6标准比例雕像"></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】合金装备 机器忍者 1/6标准比例雕像</h5>
-                                    <p>￥2000.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3313"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fktb7GlNxkchBILfDMFgBRcvyK8X_s.jpg" alt="【包邮】RIOBOT 古连泰沙"></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】RIOBOT 古连泰沙</h5>
-                                    <p>￥1500.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3312"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fu9eWNl6JShtTgEDosQJ3n__qV3K_s.jpg" alt="【包邮】RIOBOT 古连泰沙＆Spazer"></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】RIOBOT 古连泰沙＆Spazer</h5>
-                                    <p>￥2200.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3302"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Ftf-h1mx_VFOhsAQXgZO0WlSs2ZW_s.jpg" alt="【包邮】蛙吹梅雨 英雄服Ver."></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】蛙吹梅雨 英雄服Ver.</h5>
-                                    <p>￥906.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3301"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FkEm2_5xBwmW5ykgw_Vh9KFxWk_p_s.jpg" alt="【包邮】时崎狂三 内衣Ver."></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】时崎狂三 内衣Ver.</h5>
-                                    <p>￥925.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3264"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FuDraTutgPIXZglvAjSkeKQPRivB_s.jpg" alt="【包邮】进击的巨人 赫里斯塔·兰斯"></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】进击的巨人 赫里斯塔·兰斯</h5>
-                                    <p>￥912.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3250"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FjIxNjF8eH0FD7nQ8R-FR3xqBdeP_s.jpg" alt="【包邮】偶像大师 灰姑娘女孩 盐见周子 Tulip Ver."></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】偶像大师 灰姑娘女孩 盐见周子 Tulip Ver.</h5>
-                                    <p>￥910.00</p>
-                                </div>
-                            </li>
-                            <!-- 循环END -->
-                        </ul>
-                    </div>
-                </div>
-                <div class="index-floor-1 clearfix">
-                    <div class="floor-1-title floor-item-title" style="background: #808080"><strong></strong>新品推荐&nbsp;&nbsp;Recommend
-                        New Products</div>
-                    <div class="floor-1-left clearfix">
-                        <a href="http://www.anitoys.com/item.html?item_id=3082">
-                            <img width="260" height="450" src="http://upload2016.anitoys.com/FgdnoPPcBQvU7X0FFLN9gyb9KcwU"
-                                app="topc" data-original="http://upload2016.anitoys.com/FgdnoPPcBQvU7X0FFLN9gyb9KcwU"
-                                class="imglazyload" alt="夜之魔女 莉莉丝(附特典）" /></a>
-                        <div class="pt-mask-lg">夜之魔女 莉莉丝(附特典）</div>
-                    </div>
-                    <div class="floor-1-right clearfix">
-                        <ul class="clearfix">
-                            <!--循环START-->
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3263"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FpAYA6rGEM28UL-On_5E3jLil6HQ_s.jpg" alt="【包邮】刀剑神域外传Gun Gale Online 莲～Desert Bullet Ver.～"></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】刀剑神域外传Gun Gale Online 莲～Desert Bullet Ver.～</h5>
-                                    <p>￥650.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3261"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FhiFRZffNJ53iTcI9dYfzsQpZ0wf_s.jpg" alt="【包邮】DreamTech 偶像大师 灰姑娘女孩 绀碧之境界 鹭沢文香"></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】DreamTech 偶像大师 灰姑娘女孩 绀碧之境界 鹭沢文香</h5>
-                                    <p>￥911.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3250"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FjIxNjF8eH0FD7nQ8R-FR3xqBdeP_s.jpg" alt="【包邮】偶像大师 灰姑娘女孩 盐见周子 Tulip Ver."></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】偶像大师 灰姑娘女孩 盐见周子 Tulip Ver.</h5>
-                                    <p>￥910.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3243"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FmVsGJOX161_lk6u3tR6wRBLGF36_s.jpg" alt="【包邮】BRING ARTS 勇者斗恶龙XI：追寻逝去的时光 卡缪"></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】BRING ARTS 勇者斗恶龙XI：追寻逝去的时光 卡缪</h5>
-                                    <p>￥522.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3234"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FolXW6DpkbBcr3154K7r7RPMlQsM_s.jpg" alt="【包邮】出包王女Darkness 结城美柑 DarknessVer."></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】出包王女Darkness 结城美柑 DarknessVer.</h5>
-                                    <p>￥650.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3230"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FsW-taLzloH8LXOjHWFcaG-GmB_x_s.jpg" alt="【包邮】BRING ARTS 尼尔：机械纪元 寄叶 九号S型"></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】BRING ARTS 尼尔：机械纪元 寄叶 九号S型</h5>
-                                    <p>￥476.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3229"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FgdtQvhm6TkdbUVa4Kh4C_zofqKu_s.jpg" alt="【包邮】BRING ARTS 尼尔：机械纪元 寄叶 A型二号"></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】BRING ARTS 尼尔：机械纪元 寄叶 A型二号</h5>
-                                    <p>￥531.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3203"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fo3aYDb4ApWoDpPiFhZ3yQZNgUJ9_s.jpg" alt="【包邮】《我的英雄学院》DTL 盒蛋（附特典）"></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】《我的英雄学院》DTL 盒蛋（附特典）</h5>
-                                    <p>￥340.00</p>
-                                </div>
-                            </li>
-                            <!-- 循环END -->
-                        </ul>
-                    </div>
-                </div>
 
-                <div class="little-banner">
-                    <a href="">
-                        <img width="1200" height="100" src="http://upload2016.anitoys.com/FufodY0cAilz2C2Fjw7Niw7Oa5fW"
-                            app="topc" data-original="http://upload2016.anitoys.com/FufodY0cAilz2C2Fjw7Niw7Oa5fW" class="imglazyload"
-                            alt="" /> </a>
+            <!-- 5F -->
+
+            <div class="floor">
+                <div class="floor-title">
+                    <strong>5F</strong>
+                    新品推荐&nbsp;&nbsp;Recommend New Products
                 </div>
-                <div class="index-floor-1 clearfix">
-                    <div class="floor-1-title floor-item-title" style="background: #ff8000"><strong>6F</strong>现货上架&nbsp;&nbsp;Spots</div>
-                    <div class="floor-1-left clearfix">
-                        <a href="http://www.anitoys.com/index.php/item.html?item_id=2106">
-                            <img width="260" height="450" src="http://upload2016.anitoys.com/FggVBpTzC7ggs3mjeyBa07E6-wLK"
-                                app="topc" data-original="http://upload2016.anitoys.com/FggVBpTzC7ggs3mjeyBa07E6-wLK"
-                                class="imglazyload" alt="《尼尔 机械纪元》Bring Arts 2B＆机械生命体套装" /></a>
-                        <div class="pt-mask-lg">《尼尔 机械纪元》Bring Arts 2B＆机械生命体套装</div>
-                    </div>
-                    <div class="floor-1-right clearfix">
-                        <ul class="clearfix">
-                            <!--循环START-->
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3316"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FkYNJUVUM5-KPB3Q34o0cD0Tz1BO_s.jpg" alt="战舰少女R 桌面战记 桌游"></a>
-                                <div class="pt-mask">
-                                    <h5>战舰少女R 桌面战记 桌游</h5>
-                                    <p>￥198.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3116"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fm7Hzg742-BgH714L5cVPHD_v7ul_s.jpg" alt="罗小黑 夏日情侣亲子T恤 早安晚安款"></a>
-                                <div class="pt-mask">
-                                    <h5>罗小黑 夏日情侣亲子T恤 早安晚安款</h5>
-                                    <p>￥99.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=3114"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FhWfGY-VuK22dv-RRlCz7ZAyK6D0_s.jpg" alt="罗小黑 夏日情侣亲子T恤 恐龙款"></a>
-                                <div class="pt-mask">
-                                    <h5>罗小黑 夏日情侣亲子T恤 恐龙款</h5>
-                                    <p>￥99.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=2882"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FtN92Em7eBQYv-wIXX7q3G1GdaQy_s.jpg" alt="【包邮】逸仙号巡洋舰"></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】逸仙号巡洋舰</h5>
-                                    <p>￥648.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=2881"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fk-smjeqIZyZUu-KFLvbHYYgonLT_s.jpg" alt="【包邮】希儿 礼装ver."></a>
-                                <div class="pt-mask">
-                                    <h5>【包邮】希儿 礼装ver.</h5>
-                                    <p>￥648.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=2094"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fr4YjmsSObWjsHLN8hwE4nKSjoyX_s.jpg" alt="雷电 芽衣 花嫁.ver"></a>
-                                <div class="pt-mask">
-                                    <h5>雷电 芽衣 花嫁.ver</h5>
-                                    <p>￥648.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=2009"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fusdo6_p8r7HVT-AncY0MUs9w3ZD_s.jpg" alt="《最终幻想15：王者之剑》露娜弗蕾娜"></a>
-                                <div class="pt-mask">
-                                    <h5>《最终幻想15：王者之剑》露娜弗蕾娜</h5>
-                                    <p>￥760.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=1569"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fv4d9N9lt4zu6V4K15DiCdkNB5-S_s.jpg" alt="《最终幻想15》阿拉尼亚·海温德"></a>
-                                <div class="pt-mask">
-                                    <h5>《最终幻想15》阿拉尼亚·海温德</h5>
-                                    <p>￥932.00</p>
-                                </div>
-                            </li>
-                            <!-- 循环END -->
-                        </ul>
+                <div class="floor-left">
+                    <a href="#">
+                        <img src="http://upload2016.anitoys.com/FvdOJXSQdLlVtsPFgRixRAH7tMHJ" alt="绝世舞姬貂蝉 典藏手办">
+                    </a>
+                    <div class="hover-out">
+                        <p>绝世舞姬貂蝉 典藏手办</p>
                     </div>
                 </div>
-                <div class="index-floor-1 clearfix">
-                    <div class="floor-1-title floor-item-title" style="background: #808080"><strong>7F</strong>有萌专柜&nbsp;&nbsp;Umoe
-                        Corner</div>
-                    <div class="floor-1-left clearfix">
-                        <a href="http://www.anitoys.com/item.html?item_id=2029">
-                            <img width="260" height="450" src="http://upload2016.anitoys.com/FiWXRuGZRBq8ijsI8yhDqg4scFYN"
-                                app="topc" data-original="http://upload2016.anitoys.com/FiWXRuGZRBq8ijsI8yhDqg4scFYN"
-                                class="imglazyload" alt="GENESIS 游戏鬼泣3 Devil May Cry3但丁 1/6" /></a>
-                        <div class="pt-mask-lg">GENESIS 游戏鬼泣3 Devil May Cry3但丁 1/6</div>
-                    </div>
-                    <div class="floor-1-right clearfix">
-                        <ul class="clearfix">
-                            <!--循环START-->
-                            <li><a href="http://www.anitoys.com/item.html?item_id=2507"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FnMyfmK4OYw5Gh_f8jiYwDADiktW_s.jpg" alt="【有萌】【日版手办预定】HJ限定 游戏王GX 1/7 游城十代"></a>
-                                <div class="pt-mask">
-                                    <h5>【有萌】【日版手办预定】HJ限定 游戏王GX 1/7 游城十代</h5>
-                                    <p>￥1070.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=2346"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FuRqj4OnvEaE0aHk8xEWBKRL73U8_s.jpg" alt="【有萌】【手办现货】GOOD SMILE 初音未来 深海少女ver. 1/8 再版"></a>
-                                <div class="pt-mask">
-                                    <h5>【有萌】【手办现货】GOOD SMILE 初音未来 深海少女ver. 1/8 再版</h5>
-                                    <p>￥898.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=2306"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fno8RTC_Xm-mJkafFDKFs4QWR3m1_s.jpg" alt="【有萌】漫趣正版授权刀剑神域序列之争YUNA亚丝娜人物动漫鼠标垫大桌垫"></a>
-                                <div class="pt-mask">
-                                    <h5>【有萌】漫趣正版授权刀剑神域序列之争YUNA亚丝娜人物动漫鼠标垫大桌垫</h5>
-                                    <p>￥49.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=2082"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FpO4euajchpU6c9OGfNJNKAOAR_8_s.jpg" alt="【有萌】【手办预订】Chara-ani 刀剑神域 盒蛋DX 6个一盒"></a>
-                                <div class="pt-mask">
-                                    <h5>【有萌】【手办预订】Chara-ani 刀剑神域 盒蛋DX 6个一盒</h5>
-                                    <p>￥350.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=2000"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fndkq4vYEVNeLUSFroJ38jF5DFEj_s.jpg" alt="【有萌】【日版现货】BUSHIROAD P5 女神异闻录take your heart 鼠标垫"></a>
-                                <div class="pt-mask">
-                                    <h5>【有萌】【日版现货】BUSHIROAD P5 女神异闻录take your heart 鼠标垫</h5>
-                                    <p>￥200.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=1991"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FtjxgwMY3iNQWKIxiGiMo66aXDwr_s.jpg" alt="【有萌】日版周边现货】海贼王 路飞 长方形帆布抱枕 靠枕"></a>
-                                <div class="pt-mask">
-                                    <h5>【有萌】日版周边现货】海贼王 路飞 长方形帆布抱枕 靠枕</h5>
-                                    <p>￥128.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=1938"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fj4rnICOO1csjT9ON5SKpqzEvRd-_s.jpg" alt="【有萌】【日版周边现货】刀剑神域剧场版 序列战争桐人亚丝娜尤娜卡包"></a>
-                                <div class="pt-mask">
-                                    <h5>【有萌】【日版周边现货】刀剑神域剧场版 序列战争桐人亚丝娜尤娜卡包</h5>
-                                    <p>￥99.00</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=1908"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fv-9Y5vtqTKaa9ciEeuZ7Xc813fL_s.jpg" alt="【有萌】【日版周边现货】lovelive南小鸟真姬穗乃果妮可制服包学生包"></a>
-                                <div class="pt-mask">
-                                    <h5>【有萌】【日版周边现货】lovelive南小鸟真姬穗乃果妮可制服包学生包</h5>
-                                    <p>￥370.00</p>
-                                </div>
-                            </li>
-                            <!-- 循环END -->
-                        </ul>
+                <div class="floor-right">
+                    <ul class="floor-ul">
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FtF48XpjDz8scvIWivisHCnrKxeK_s.jpg" alt="【包邮】刀剑神域外传Gun Gale Online 莲～Desert Bullet Ver.～">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】刀剑神域外传Gun Gale Online 莲～Desert Bullet Ver.～</h5>
+                                <p>￥2000.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FssUO2nywYsCGF3yds20qVrPLx4F_s.jpg" alt="【包邮】DreamTech 偶像大师 灰姑娘女孩 绀碧之境界 鹭沢文香">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】DreamTech 偶像大师 灰姑娘女孩 绀碧之境界 鹭沢文香</h5>
+                                <p>￥2000.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">>
+                                <img src="http://upload2016.anitoys.com/Fktb7GlNxkchBILfDMFgBRcvyK8X_s.jpg" alt="【包邮】偶像大师 灰姑娘女孩 盐见周子 Tulip Ver.">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】偶像大师 灰姑娘女孩 盐见周子 Tulip Ver.</h5>
+                                <p>￥1500.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fu9eWNl6JShtTgEDosQJ3n__qV3K_s.jpg" alt="【包邮】BRING ARTS 勇者斗恶龙XI：追寻逝去的时光 卡缪">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】BRING ARTS 勇者斗恶龙XI：追寻逝去的时光 卡缪</h5>
+                                <p>￥2200.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Ftf-h1mx_VFOhsAQXgZO0WlSs2ZW_s.jpg" alt="【包邮】出包王女Darkness 结城美柑 DarknessVer.">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】出包王女Darkness 结城美柑 DarknessVer.</h5>
+                                <p>￥906.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FkEm2_5xBwmW5ykgw_Vh9KFxWk_p_s.jpg" alt="【包邮】BRING ARTS 尼尔：机械纪元 寄叶 九号S型">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】BRING ARTS 尼尔：机械纪元 寄叶 九号S型</h5>
+                                <p>￥925.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FuDraTutgPIXZglvAjSkeKQPRivB_s.jpg" alt="【包邮】BRING ARTS 尼尔：机械纪元 寄叶 A型二号">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】BRING ARTS 尼尔：机械纪元 寄叶 A型二号</h5>
+                                <p>￥912.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FjIxNjF8eH0FD7nQ8R-FR3xqBdeP_s.jpg" alt="【包邮】偶像大师 灰姑娘女孩 盐见周子 Tulip Ver.">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】偶像大师 灰姑娘女孩 盐见周子 Tulip Ver.</h5>
+                                <p>￥910.00</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="floor">
+                <div class="floor-title" style="background:#808080">
+                    <strong></strong>
+                    新品推荐&nbsp;&nbsp;Recommend New Products
+                </div>
+                <div class="floor-left">
+                    <a href="#">
+                        <img src="http://upload2016.anitoys.com/FgdnoPPcBQvU7X0FFLN9gyb9KcwU" alt="夜之魔女 莉莉丝(附特典）">
+                    </a>
+                    <div class="hover-out">
+                        <p>夜之魔女 莉莉丝(附特典）</p>
                     </div>
                 </div>
-                <div style="text-align: center;">
-                    <font face="Microsoft Yahei" size="5">
-                        <font color="#ff0000"><br /></font>
-                    </font>
+                <div class="floor-right">
+                    <ul class="floor-ul">
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FpAYA6rGEM28UL-On_5E3jLil6HQ_s.jpg" alt="【包邮】刀剑神域外传Gun Gale Online 莲～Desert Bullet Ver.～">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】刀剑神域外传Gun Gale Online 莲～Desert Bullet Ver.～</h5>
+                                <p>￥650.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FhiFRZffNJ53iTcI9dYfzsQpZ0wf_s.jpg" alt="【包邮】DreamTech 偶像大师 灰姑娘女孩 绀碧之境界 鹭沢文香">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】DreamTech 偶像大师 灰姑娘女孩 绀碧之境界 鹭沢文香</h5>
+                                <p>￥911.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FjIxNjF8eH0FD7nQ8R-FR3xqBdeP_s.jpg" alt="【包邮】偶像大师 灰姑娘女孩 盐见周子 Tulip Ver.">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】偶像大师 灰姑娘女孩 盐见周子 Tulip Ver.</h5>
+                                <p>￥910.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FmVsGJOX161_lk6u3tR6wRBLGF36_s.jpg" alt="【包邮】BRING ARTS 勇者斗恶龙XI：追寻逝去的时光 卡缪">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】BRING ARTS 勇者斗恶龙XI：追寻逝去的时光 卡缪</h5>
+                                <p>￥522.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FolXW6DpkbBcr3154K7r7RPMlQsM_s.jpg" alt="【包邮】出包王女Darkness 结城美柑 DarknessVer.">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】出包王女Darkness 结城美柑 DarknessVer.</h5>
+                                <p>￥650.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FsW-taLzloH8LXOjHWFcaG-GmB_x_s.jpg" alt="【包邮】BRING ARTS 尼尔：机械纪元 寄叶 九号S型">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】BRING ARTS 尼尔：机械纪元 寄叶 九号S型</h5>
+                                <p>￥476.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FgdtQvhm6TkdbUVa4Kh4C_zofqKu_s.jpg" alt="【包邮】BRING ARTS 尼尔：机械纪元 寄叶 A型二号">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】BRING ARTS 尼尔：机械纪元 寄叶 A型二号</h5>
+                                <p>￥531.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fo3aYDb4ApWoDpPiFhZ3yQZNgUJ9_s.jpg" alt="【包邮】偶像大师 灰姑娘女孩 盐见周子 Tulip Ver.">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】偶像大师 灰姑娘女孩 盐见周子 Tulip Ver.</h5>
+                                <p>￥340.00</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div style="text-align: center;">
-                    <font face="Microsoft Yahei" size="5">
-                        <font color="#ff0000">◆</font>&nbsp;
-                    </font><span style="font-family: &quot;Microsoft Yahei&quot;; font-size: x-large;">官方活动周边 </span><span
-                        style="font-family: &quot;Microsoft Yahei&quot;;">
+            </div>
+
+            <!-- 小banner -->
+
+            <div class="little-banner">
+                <a href="#">
+                    <img src="http://upload2016.anitoys.com/FufodY0cAilz2C2Fjw7Niw7Oa5fW" alt="">
+                </a>
+            </div>
+
+            <!-- 6F -->
+
+            <div class="floor">
+                <div class="floor-title">
+                    <strong>6F</strong>
+                    现货上架&nbsp;&nbsp;Spots
+                </div>
+                <div class="floor-left">
+                    <a href="#">
+                        <img src="http://upload2016.anitoys.com/FggVBpTzC7ggs3mjeyBa07E6-wLK" alt="《尼尔 机械纪元》Bring Arts 2B＆机械生命体套装">
+                    </a>
+                    <div class="hover-out">
+                        <p>《尼尔 机械纪元》Bring Arts 2B＆机械生命体套装</p>
+                    </div>
+                </div>
+                <div class="floor-right">
+                    <ul class="floor-ul">
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FkYNJUVUM5-KPB3Q34o0cD0Tz1BO_s.jpg" alt="战舰少女R 桌面战记 桌游">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>战舰少女R 桌面战记 桌游</h5>
+                                <p>￥198.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fm7Hzg742-BgH714L5cVPHD_v7ul_s.jpg" alt="罗小黑 夏日情侣亲子T恤 早安晚安款">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>罗小黑 夏日情侣亲子T恤 早安晚安款</h5>
+                                <p>￥99.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">>
+                                <img src="http://upload2016.anitoys.com/FhWfGY-VuK22dv-RRlCz7ZAyK6D0_s.jpg" alt="罗小黑 夏日情侣亲子T恤 恐龙款">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>罗小黑 夏日情侣亲子T恤 恐龙款</h5>
+                                <p>￥99.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FtN92Em7eBQYv-wIXX7q3G1GdaQy_s.jpg" alt="【包邮】逸仙号巡洋舰">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】逸仙号巡洋舰</h5>
+                                <p>￥648.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fk-smjeqIZyZUu-KFLvbHYYgonLT_s.jpg" alt="【包邮】希儿 礼装ver.">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【包邮】希儿 礼装ver.</h5>
+                                <p>￥648.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fr4YjmsSObWjsHLN8hwE4nKSjoyX_s.jpg" alt="雷电 芽衣 花嫁.ver">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>雷电 芽衣 花嫁.ver</h5>
+                                <p>￥648.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fusdo6_p8r7HVT-AncY0MUs9w3ZD_s.jpg" alt="《最终幻想15：王者之剑》露娜弗蕾娜">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>《最终幻想15：王者之剑》露娜弗蕾娜</h5>
+                                <p>￥760.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fv4d9N9lt4zu6V4K15DiCdkNB5-S_s.jpg" alt="《最终幻想15》阿拉尼亚·海温德">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>《最终幻想15》阿拉尼亚·海温德</h5>
+                                <p>￥932.00</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 7F -->
+
+            <div class="floor">
+                <div class="floor-title" style="background:#808080">
+                    <strong>7F </strong>
+                    有萌专柜&nbsp;&nbsp;Umoe Corner
+                </div>
+                <div class="floor-left">
+                    <a href="#">
+                        <img src="http://upload2016.anitoys.com/FiWXRuGZRBq8ijsI8yhDqg4scFYN" alt="GENESIS 游戏鬼泣3 Devil May Cry3但丁 1/6" />
+                    </a>
+                    <div class="hover-out">
+                        <p>GENESIS 游戏鬼泣3 Devil May Cry3但丁 1/6</p>
+                    </div>
+                </div>
+                <div class="floor-right">
+                    <ul class="floor-ul">
+                        <!--循环START-->
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FnMyfmK4OYw5Gh_f8jiYwDADiktW_s.jpg" alt="【有萌】【日版手办预定】HJ限定 游戏王GX 1/7 游城十代">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【有萌】【日版手办预定】HJ限定 游戏王GX 1/7 游城十代</h5>
+                                <p>￥1070.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FuRqj4OnvEaE0aHk8xEWBKRL73U8_s.jpg" alt="【有萌】【手办现货】GOOD SMILE 初音未来 深海少女ver. 1/8 再版">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【有萌】【手办现货】GOOD SMILE 初音未来 深海少女ver. 1/8 再版</h5>
+                                <p>￥898.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fno8RTC_Xm-mJkafFDKFs4QWR3m1_s.jpg" alt="【有萌】漫趣正版授权刀剑神域序列之争YUNA亚丝娜人物动漫鼠标垫大桌垫">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【有萌】漫趣正版授权刀剑神域序列之争YUNA亚丝娜人物动漫鼠标垫大桌垫</h5>
+                                <p>￥49.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FpO4euajchpU6c9OGfNJNKAOAR_8_s.jpg" alt="【有萌】【手办预订】Chara-ani 刀剑神域 盒蛋DX 6个一盒">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【有萌】【手办预订】Chara-ani 刀剑神域 盒蛋DX 6个一盒</h5>
+                                <p>￥350.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fndkq4vYEVNeLUSFroJ38jF5DFEj_s.jpg" alt="【有萌】【日版现货】BUSHIROAD P5 女神异闻录take your heart 鼠标垫">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【有萌】【日版现货】BUSHIROAD P5 女神异闻录take your heart 鼠标垫</h5>
+                                <p>￥200.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FtjxgwMY3iNQWKIxiGiMo66aXDwr_s.jpg" alt="【有萌】日版周边现货】海贼王 路飞 长方形帆布抱枕 靠枕">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【有萌】日版周边现货】海贼王 路飞 长方形帆布抱枕 靠枕</h5>
+                                <p>￥128.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fj4rnICOO1csjT9ON5SKpqzEvRd-_s.jpg" alt="【有萌】【日版周边现货】刀剑神域剧场版 序列战争桐人亚丝娜尤娜卡包">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【有萌】【日版周边现货】刀剑神域剧场版 序列战争桐人亚丝娜尤娜卡包</h5>
+                                <p>￥99.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fv-9Y5vtqTKaa9ciEeuZ7Xc813fL_s.jpg" alt="【有萌】【日版周边现货】lovelive南小鸟真姬穗乃果妮可制服包学生包">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>【有萌】【日版周边现货】lovelive南小鸟真姬穗乃果妮可制服包学生包</h5>
+                                <p>￥370.00</p>
+                            </div>
+                        </li>
+                        <!-- 循环END -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 官方周边 -->
+
+            <div class="floor-4">
+                <div class="floor-4-top">
+                    <span>
+                        <font color="#ff0000">◆</font>
+                    </span>&nbsp;
+                    <span>官方活动周边</span>
+                    <span>
                         <font size="4">Event Goods</font>
                     </span>
                 </div>
-                <div class="index-floor-3 clearfix">
-                    <div class="floor-3-title floor-item-title" style="background: #ff8000"><strong>8F</strong>Wake
-                        Up,Girls! 上海场限定官方周边&nbsp;&nbsp;</div>
-                    <div class="floor-3-left">
-                        <a href="http://www.anitoys.com/index.php/search.html?shop_id=6&shop_cat_id=108">
-                            <img width="500" height="450" src="http://upload2016.anitoys.com/FtoFH_yRbpy-8qcf6dBJDTMaAPLr"
-                                app="topc" data-original="http://upload2016.anitoys.com/FtoFH_yRbpy-8qcf6dBJDTMaAPLr"
-                                class="imglazyload" alt="Wake Up,Girls!Special Party ～一直说对不起真是对不起！～in Shanghai " /></a>
-                        <div class="pt-mask-lg">Wake Up,Girls!Special Party ～一直说对不起真是对不起！～in Shanghai </div>
-                    </div>
-                    <div class="floor-3-right clearfix">
-                        <ul class="clearfix">
-                            <li><a href="http://www.anitoys.com/item.html?item_id=2612"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FoEhMfUGzn4ny_IX2-BVvezqJ_Ox_s.jpg" alt="Wake Up,Girls! 上海场限定官方周边 应援荧光棒"></a>
-                                <div class="pt-mask">
-                                    <h5>Wake Up,Girls! 上海场限定官方周边 应援荧光棒</h5>
-                                    <p>250.000</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=2215"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FpGDhxW6pG5vHsmdpyqdRbbJiPXD_s.jpg" alt="Wake Up,Girls! 上海场限定官方周边 运动毛巾"></a>
-                                <div class="pt-mask">
-                                    <h5>Wake Up,Girls! 上海场限定官方周边 运动毛巾</h5>
-                                    <p>130.000</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=2213"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FsmRL5-TvKDIQ2FHyTt0L1ykuwmZ_s.jpg" alt="Wake Up,Girls! 上海场限定官方周边 钥匙扣"></a>
-                                <div class="pt-mask">
-                                    <h5>Wake Up,Girls! 上海场限定官方周边 钥匙扣</h5>
-                                    <p>40.000</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=2212"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/FpNTC2w4Auvio8TWzOAMEe9fep6m_s.jpg" alt="Wake Up,Girls! 上海场限定官方周边帆布包"></a>
-                                <div class="pt-mask">
-                                    <h5>Wake Up,Girls! 上海场限定官方周边帆布包</h5>
-                                    <p>130.000</p>
-                                </div>
-                            </li>
-                            <li><a href="http://www.anitoys.com/item.html?item_id=2211"><img width="220" height="220"
-                                        src="http://upload2016.anitoys.com/Fss2_rlkvwPrAPFrVrW6RBHkZE86_s.jpg" alt="Wake Up,Girls! 上海场限定官方周边T恤"></a>
-                                <div class="pt-mask">
-                                    <h5>Wake Up,Girls! 上海场限定官方周边T恤</h5>
-                                    <p>200.000</p>
-                                </div>
-                            </li>
-                        </ul>
+            </div>
+
+            <!-- 8F -->
+
+            <div class="floor-3">
+                <div class="floor-title">
+                    <strong>8F</strong>
+                    Wake Up,Girls! 上海场限定官方周边
+                </div>
+                <div class="floor-3-left">
+                    <a href="#">
+                        <img src="http://upload2016.anitoys.com/FtoFH_yRbpy-8qcf6dBJDTMaAPLr" alt="Wake Up,Girls!Special Party ～一直说对不起真是对不起！～in Shanghai " />
+                    </a>
+                    <div class="hover-out">
+                        <p>Wake Up,Girls!Special Party ～一直说对不起真是对不起！～in Shanghai </p>
                     </div>
                 </div>
-                <div class="friend-link">
-                    <div class="friend-link-title">LINK</div>
-                    <hr>
-                    <ul class="friend-link-list clearfix">
-                        <li class="clearfix">
-                            <div class="friend-link-item-bg"><a href="http://old.anitoys.com" title="旧版补款入口"><img src="http://upload2016.anitoys.com/FomKLwmQxH2Nzgt7luhKInHdgloL"></a></div>
-                            <p style="text-align:center"><a href="http://old.anitoys.com" title="旧版补款入口">旧版补款入口</a></p>
+                <div class="floor-3-right">
+                    <ul class="floor-ul">
+                        <!--循环START-->
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FoEhMfUGzn4ny_IX2-BVvezqJ_Ox_s.jpg" alt="Wake Up,Girls! 上海场限定官方周边 应援荧光棒">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>Wake Up,Girls! 上海场限定官方周边 应援荧光棒</h5>
+                                <p>250.00</p>
+                            </div>
                         </li>
-                        <li class="clearfix">
-                            <div class="friend-link-item-bg"><a href="http://aninews.anitoys.com" title="aniNews"><img
-                                        src="http://upload2016.anitoys.com/Fh8hebGrkrkodO9jKBpgRBsM3Jdv"></a></div>
-                            <p style="text-align:center"><a href="http://aninews.anitoys.com" title="aniNews">aniNews</a></p>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FpGDhxW6pG5vHsmdpyqdRbbJiPXD_s.jpg" alt="Wake Up,Girls! 上海场限定官方周边 运动毛巾）">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>Wake Up,Girls! 上海场限定官方周边 运动毛巾</h5>
+                                <p>130.00</p>
+                            </div>
                         </li>
-                        <li class="clearfix">
-                            <div class="friend-link-item-bg"><a href="https://wf.anitoys.com/2018summer" title="WF2018夏"><img
-                                        src="http://upload2016.anitoys.com/FrXzmEUo_5_hu4GvLQyFDKnJ5dEb"></a></div>
-                            <p style="text-align:center"><a href="https://wf.anitoys.com/2018summer" title="WF2018夏">WF2018夏</a></p>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FsmRL5-TvKDIQ2FHyTt0L1ykuwmZ_s.jpg" alt="Wake Up,Girls! 上海场限定官方周边 钥匙扣">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>Wake Up,Girls! 上海场限定官方周边 钥匙扣</h5>
+                                <p>40.00</p>
+                            </div>
                         </li>
-                        <li class="clearfix">
-                            <div class="friend-link-item-bg"><a href="https://wf.anitoys.com/2018summer/show#/" title="新作模型展示"><img
-                                        src="http://upload2016.anitoys.com/FrXzmEUo_5_hu4GvLQyFDKnJ5dEb"></a></div>
-                            <p style="text-align:center"><a href="https://wf.anitoys.com/2018summer/show#/" title="新作模型展示">新作模型展示</a></p>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/FpNTC2w4Auvio8TWzOAMEe9fep6m_s.jpg" alt="Wake Up,Girls! 上海场限定官方周边 帆布包">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>Wake Up,Girls! 上海场限定官方周边 帆布包</h5>
+                                <p>130.00</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="http://upload2016.anitoys.com/Fss2_rlkvwPrAPFrVrW6RBHkZE86_s.jpg" alt="Wake Up,Girls! 上海场限定官方周边 T恤">
+                            </a>
+                            <div class="pt-mask">
+                                <h5>Wake Up,Girls! 上海场限定官方周边 T恤</h5>
+                                <p>200.00</p>
+                            </div>
                         </li>
                     </ul>
-                </div><!-- <img width="221" height="189" src="http://www.anitoys.com/app/topc/statics/images/loading_bg.png" app="topc" data-original="" class="imglazyload" /> -->
-            </div>
-            <!-- 3F -->
-            <div class="cb">
-
-            </div>
-            <!-- 4F -->
-            <div class="cb">
-
+                </div>
             </div>
 
-            <!-- 5F -->
-            <div class="cb">
+            <!-- Link -->
 
+            <div class="friend-link">
+                <div class="friend-link-title">LINK</div>
+                <hr>
+                <ul class="friend-link-list">
+                    <li>
+                        <div class="friend-link-item-bg">
+                            <a href="#" title="旧版补款入口">
+                                <img src="http://upload2016.anitoys.com/FomKLwmQxH2Nzgt7luhKInHdgloL">
+                            </a>
+                        </div>
+                        <p style="text-align:center">
+                            <a href="#" title="旧版补款入口">
+                                旧版补款入口
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="friend-link-item-bg">
+                            <a href="#" title="aniNews">
+                                <img src="http://upload2016.anitoys.com/Fh8hebGrkrkodO9jKBpgRBsM3Jdv">
+                            </a>
+                        </div>
+                        <p style="text-align:center">
+                            <a href="#" title="aniNews">
+                                aniNews
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="friend-link-item-bg">
+                            <a href="#" title="WF2018夏">
+                                <img src="http://upload2016.anitoys.com/FrXzmEUo_5_hu4GvLQyFDKnJ5dEb">
+                            </a>
+                        </div>
+                        <p style="text-align:center">
+                            <a href="#" title="WF2018夏">
+                                WF2018夏
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <div class="friend-link-item-bg">
+                            <a href="#" title="新作模型展示">
+                                <img src="http://upload2016.anitoys.com/FrXzmEUo_5_hu4GvLQyFDKnJ5dEb">
+                            </a>
+                        </div>
+                        <p style="text-align:center">
+                            <a href="#" title="新作模型展示">
+                                新作模型展示
+                            </a>
+                        </p>
+                    </li>
+                </ul>
             </div>
-            <!-- 小型banner -->
-            <div class="cb">
 
+            <!-- 返回顶部 -->
+
+            <div class="friend-link">
+                <div class="back-to-top">
+                    <span>返回顶部</span>
+                </div>
+                <div class="little-banner">
+                    <a href="#">
+                        <img src="http://upload2016.anitoys.com/FocpUHA1fZPzUNllym2scSlg5ygi" alt="" />
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-    <div class="friend-link">
-        <div class="back-to-top">
-            <i class="icon icon-arrow-start-a" data-icon="\2817"></i>
-            <span>返回顶部</span>
-        </div>
-        <div class="little-banner">
-            <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzgwMDA5MTAxMV8yMzA4MzJfODAwMDkxMDExXzJf">
-                <img width="1200" height="100" src="http://upload2016.anitoys.com/FocpUHA1fZPzUNllym2scSlg5ygi" app="topc"
-                    data-original="http://upload2016.anitoys.com/FocpUHA1fZPzUNllym2scSlg5ygi" class="imglazyload" alt="" />
-            </a>
-        </div>
-    </div>
+
     <!-- 底部导航 -->
-    <div class="footer anitoys-footer">
-        <div class="wrap-lg clearfix">
 
-            <div class="help-box anitoys-footer-item clearfix">
-                <div class="help-box-left anitoys-footer-icon"><img width="100" height="100" src="http://120.26.110.33/images/f1/cd/6b/828883fb6af19fa0bb8530afb24f8f418130cc9a.png"
-                        alt="" /></div>
-                <div class="help-box-right anitoys-footer-con">
-                    <h4>新手帮助</h4>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=82">补款流程</a>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=47">预售商品购买流程</a>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=46">现货购买流程</a>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=45">常见问题</a>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=44">会员注册协议</a>
-                </div>
-            </div>
-
-            <div class="help-box anitoys-footer-item clearfix">
-                <div class="help-box-left anitoys-footer-icon"><img width="100" height="100" src="http://120.26.110.33/images/93/c0/97/7065896d16e643e7890243e3220ec3137b60219e.png"
-                        alt="" /></div>
-                <div class="help-box-right anitoys-footer-con">
-                    <h4>积分优惠券</h4>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=37">优惠券使用教程与规则</a>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=420">会员等级规则</a>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=35">积分使用规则</a>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=33">积分奖励计划</a>
-                </div>
-            </div>
-
-            <div class="help-box anitoys-footer-item clearfix">
-                <div class="help-box-left anitoys-footer-icon"><img width="100" height="100" src="http://120.26.110.33/images/a7/a7/e8/c8b58cb88930725eee0aebb115911cf904e97e9c.png"
-                        alt="" /></div>
-                <div class="help-box-right anitoys-footer-con">
-                    <h4>售后</h4>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=200">投诉建议</a>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=125">关于预存款充值</a>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=32">网站免责声明</a>
-                </div>
-            </div>
-
-            <div class="help-box anitoys-footer-item clearfix">
-                <div class="help-box-left anitoys-footer-icon"><img width="100" height="100" src="http://120.26.110.33/images/32/9e/2c/d079dc4c4b87bfdbcdebb92beef45bdfde29cb40.png"
-                        alt="" /></div>
-                <div class="help-box-right anitoys-footer-con">
-                    <h4>关于我们</h4>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=26">联系我们</a>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=130">网站更新详情</a>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=18">公司简介</a>
-                    <a href="http://www.anitoys.com/content-info.html?article_id=30">关于172酱与他的小伙伴</a>
-                </div>
-            </div>
-
-
+    <div class="footer">
+        <div class="commonBox">
+            <ul class="footer-ul">
+                <h4>新手帮助</h4>
+                <a href="#">补款流程</a>
+                <a href="#">预售商品购买流程</a>
+                <a href="#">现货购买流程</a>
+                <a href="#">常见问题</a>
+                <a href="#">会员注册协议</a>
+            </ul>
+            <ul class="footer-ul">
+                <h4>积分优惠券</h4>
+                <a href="#">优惠券使用教程与规则</a>
+                <a href="#">会员等级规则</a>
+                <a href="#">积分使用规则</a>
+                <a href="#">积分奖励计划</a>
+            </ul>
+            <ul class="footer-ul">
+                <h4>售后</h4>
+                <a href="#">投诉建议</a>
+                <a href="#">关于预存款充值</a>
+                <a href="#">网站免责声明</a>
+            </ul>
+            <ul class="footer-ul">
+                <h4>关于我们</h4>
+                <a href="#">联系我们</a>
+                <a href="#">网站更新详情</a>
+                <a href="#">公司介绍</a>
+                <a href="#">关于172酱与她的小伙伴</a>
+            </ul>
         </div>
     </div>
-    <div id="footer" class="footer">
+    <div class="footer-bottom">
         有任何购物问题请联系我们在线客服 | 电话：021-55135395 | 工作时间：周一至周五 09:30－18:00
         <p>©2017 阿尼托 上海索罗游信息技术有限公司 anitoys.com 版权所有</p>
         <div style="text-align: center;">沪ICP备11047967号-18</div>
     </div>
-    <style type="text/css">
-        .atys-footer-item {
-            width: 25%;
-            float: left;
-        }
-    </style>
 </body>
 
 </html>
