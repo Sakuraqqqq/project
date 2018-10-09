@@ -1,0 +1,295 @@
+/* 公共css */
+html {
+    min-width: 1300px;
+    background: #fff;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+fieldset,
+form,
+input,
+select,
+textarea,
+button,
+figure {
+    margin: 0;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 75%;
+    line-height: 1.5;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+a img,
+iframe {
+    border: 0 none;
+}
+
+address,
+em,
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.commonBox {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* header */
+.header .login-left {
+    width: 250px;
+    margin-top: 24px;
+}
+
+.login-left a {
+    display: block;
+    height: 69px;
+}
+
+/* main */
+.main {
+    overflow: hidden;
+}
+
+.main-left {
+    float: left;
+    width: 665px;
+    margin-left: 10px;
+}
+
+.main-img {
+    background: url(http://upload2016.anitoys.com/FjSta2JDyEt9VgWZrTJ5qbzIJqH5);
+    background-size: cover;
+    background-position: center;
+    height: 365px;
+}
+
+.main-right {
+    width: 440px;
+    margin-left: 10px;
+    float: left;
+    background: white;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+h1 {
+    color: #333;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.form-li {
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    min-height: 36px;
+}
+
+.form-li label {
+    float: left;
+    width: 68px;
+    min-height: 1px;
+    text-align: left;
+    line-height: 36px;
+    display: inline-block;
+}
+
+.form-inp {
+    width: 300px;
+    margin-left: 1em;
+    position: relative;
+    line-height: 34px;
+    display: inline-block;
+}
+
+.input-block {
+    padding-right: 36px;
+    width: 294px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 100%;
+    font-family: inherit;
+}
+
+.form-inp i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-size: 18px;
+    color: #999999;
+}
+
+.password-check {
+    float: right;
+    margin-top: 5px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 18px;
+    color: #666666;
+}
+
+.password-check q {
+    quotes: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.password-check .progress {
+    display: inline-block;
+    background-color: #FFFFFF;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    vertical-align: middle;
+    clear: both;
+}
+
+.password-check em {
+    margin-left: 1px;
+    padding: 0 10px;
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.input-st {
+    width: 134px;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px;
+    border: 1px solid #cccccc;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 100%;
+    font-family: inherit;
+}
+
+.auto-change-verify-handle {
+    cursor: pointer;
+}
+
+.inline {
+    display: inline-block;
+    line-height: 34px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.inline div {
+    display: inline;
+}
+
+.form-check {
+    width: 300px;
+    float: left;
+    margin-left: 1em;
+    display: block;
+    line-height: 34px;
+}
+
+.x-checkbox {
+    float: left;
+    margin-top: 12px;
+    height: 13px;
+    line-height: normal;
+}
+
+.form-check label {
+    width: 80%;
+    margin-left: 5px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.register-btn {
+    margin-right: 20px;
+    display: block;
+    width: 100%;
+    margin: 0;
+    white-space: nowrap;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 109%;
+    font-family: inherit;
+    border: 0 none;
+    background-color: transparent;
+    padding: 0;
+    outline: none;
+}
+
+.register-btn>span {
+    background: #ff6600;
+    padding-left: 0;
+    border-color: transparent;
+    color: white;
+    border-radius: 3px;
+}
+
+.register-btn span {
+    display: block;
+    height: 100%;
+    font-size: inherit;
+}
+
+.register-btn>span>span {
+    padding-right: 0;
+    width: 100%;
+    line-height: 34px;
+}
+
+.link-color {
+    color: #666666;
+    margin-left: 10px;
+}
+
+/* footer */
+
+.footer {
+    color: #666;
+    padding: 10px 0;
+    text-align: center;
+    line-height: 2;
+}

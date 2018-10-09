@@ -877,6 +877,9 @@ a{
     color: #333;
     font-size: 12px;
 }
+.friend-link-list li:hover a {
+    color: #ff6600;
+}
 
 /* 返回顶部 */
 
