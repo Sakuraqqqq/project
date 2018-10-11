@@ -64,7 +64,9 @@ a {
     width: 1200px;
     margin: 0 auto;
 }
-
+input:hover, input:focus {
+    border-color: darkgray;
+}
 
 /* header */
 .header .login-left {

@@ -8,6 +8,8 @@
     <title>anijoys注册</title>
     <link rel="stylesheet" href="../css/register.css">
     <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="../js/register.js"></script>
+    <script src="../js/ajax.js"></script>
 </head>
 
 <body>
@@ -34,7 +36,7 @@
             <div class="main-right">
                 <div class="register-box">
                     <h1 class="register-title">用户注册</h1>
-                    <form action="#" method="POST" class="register-form">
+                    <form action="#" method="POST" class="register-form" onsubmit="return false">
                         <ul>
                             <li class="form-li">
                                 <label>
@@ -42,7 +44,8 @@
                                     登录名
                                 </label>
                                 <span class="form-inp">
-                                    <input type="text" class="input-block" placeholder="用户名/邮箱/手机号，至少4个字符" minlength="4">
+                                    <input type="text" class="input-block username" name="username" placeholder="用户名/邮箱/手机号，至少4个字符"
+                                        minlength="4">
                                     <i class="iconfont icon-wodejuhuasuan"></i>
                                 </span>
                             </li>
@@ -52,8 +55,8 @@
                                     设置密码
                                 </label>
                                 <span class="form-inp">
-                                    <input type="password" class="input-block" placeholder="6-20个字符" minlength="6"
-                                        maxlength="20">
+                                    <input type="password" class="input-block password" name="password" placeholder="6-20个字符"
+                                        minlength="6" maxlength="20">
                                     <i class="iconfont icon-suo"></i>
                                     <div class="password-check">
                                         <q>安全程度</q>
@@ -71,12 +74,12 @@
                                     确认密码
                                 </label>
                                 <span class="form-inp">
-                                    <input type="password" class="input-block" placeholder="再次填写密码" minlength="6"
-                                        maxlength="20">
+                                    <input type="password" class="input-block check-password" placeholder="再次填写密码"
+                                        minlength="6" maxlength="20">
                                     <i class="iconfont icon-suo"></i>
                                 </span>
                             </li>
-                            <li class="form-li">
+                            <!-- <li class="form-li">
                                 <label>
                                     <em>*</em>
                                     验证码
@@ -90,7 +93,7 @@
                                         <a href="javascript:void(0);">换一张</a>
                                     </div>
                                 </span>
-                            </li>
+                            </li> -->
                             <li class="form-li">
                                 <label></label>
                                 <span class="form-check">
@@ -106,7 +109,7 @@
                             <li class="form-li">
                                 <label></label>
                                 <span class="form-inp">
-                                    <button type="submit" class="register-btn" rel="_request">
+                                    <button type="submit" class="register-btn" name="register-btn" rel="_request">
                                         <span>
                                             <span>立即注册</span>
                                         </span>
@@ -126,6 +129,62 @@
             </div>
         </div>
     </div>
+    <script>
+        var username = document.querySelector('.username');
+        var password = document.querySelector('.password');
+        var check_password = document.querySelector('.check-password');
+        var progress = document.querySelector('.progress');
+        username.onblur = function () {
+            if (username.value.trim() != '') {
+                var reg = /^\w{4,16}$/;
+                var bool = reg.test(username.value);
+                if (!bool) {
+                    username.value='';
+                    username.focus();
+                    alert('请输入4-16位字符');
+                }
+            }
+        }
+        password.onblur = function(){
+            var len = password.value.length;
+            var val = password.value.trim();
+            if(len < 6){
+                password.value='';
+                username.focus();
+                alert('请输入6-20位密码');
+            }else if(val == ''){
+                password.value='';
+                username.focus();
+                alert('密码不能为空哦');
+            }
+        }
+        password.oninput = function () {
+            var len = password.value.length;
+            if (len < 6) {
+                progress.children[0].style.background = '#ccc';
+            } else if (len >= 6 && len < 10) {
+                progress.children[0].style.background = '#e22335';
+                progress.children[1].style.background = '#ccc';
+            } else if (len >= 10 && len < 15) {
+                progress.children[1].style.background = '#e22335';
+                progress.children[2].style.background = '#ccc';
+            } else if (len >= 15 && len <= 20) {
+                progress.children[2].style.background = '#e22335';
+            }
+        }
+        check_password.onblur = function () {
+            if (password.value != check_password.value) {
+                password.value='';
+                password.focus();
+                progress.children[0].style.background = '#ccc';
+                progress.children[1].style.background = '#ccc';
+                progress.children[2].style.background = '#ccc';
+                check_password.value='';
+                alert('两次密码输入不一致');
+            }
+        }
+        register.init('.register-form')
+    </script>
 
     <!-- footer -->
 

@@ -8,6 +8,8 @@
     <title>anijoys登录</title>
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="../js/login.js"></script>
+    <script src="../js/ajax.js"></script>
 </head>
 
 <body>
@@ -32,7 +34,7 @@
                 <div class="main-img"></div>
             </div>
             <div class="main-right">
-                <form action="#" method="POST" class="login-form">
+                <form action="#" method="POST" class="login-form" onsubmit="return false">
                     <div class="login-header">
                         <div class="login-header-kayname">会员登录</div>
                         <div class="go-register">
@@ -43,26 +45,26 @@
                         <ul class="login-form-ul">
                             <li>
                                 <span>
-                                    <input type="text" placeholder="用户名/邮箱地址/已验证手机号">
+                                    <input type="text" class="username"  name="username" required="required" placeholder="用户名/邮箱地址/已验证手机号">
                                     <i class="iconfont icon-wodejuhuasuan"></i>
                                 </span>
                             </li>
                             <li>
                                 <span>
-                                    <input type="password" placeholder="填写密码">
+                                    <input type="password" class="password"  name="password" required="required" placeholder="填写密码">
                                     <i class="iconfont icon-suo"></i>
                                 </span>
                             </li>
-                            <li style="margin-bottom: 3px;">
+                            <!-- <li style="margin-bottom: 3px;">
                                 <label>验证码</label>
                                 <span><input type="text" class="check-input" required size="4" maxlength="4">
                                     <img align="absmiddle" class="auto-change-verify-handle" src="http://www.anitoys.com/wap/vcode.html?key=topc_signin&width=120&height=35"
                                         alt="" width="90" height="30">
                                     <div class="inline">
-                                        <div>看不清？</div><a href="#">换一张</a>
+                                        <div>看不清？</div><a href="javascript:void(0);">换一张</a>
                                     </div>
                                 </span>
-                            </li>
+                            </li> -->
                             <li style="height:36px">
                                 <div class="auto-login">
                                     <span class="check-wrap">
@@ -75,7 +77,7 @@
                                 </div>
                             </li>
                             <li style="height:36px">
-                                <button type="submit" class="login-btn">
+                                <button type="submit" name="login-btn" class="login-btn">
                                     <span>
                                         <span>登录</span>
                                     </span>
@@ -91,14 +93,28 @@
             </div>
         </div>
     </div>
-
+    <script>
+        var username = document.querySelector('.username');
+        var password = document.querySelector('.password');
+        username.onblur = function () {
+            if (username.value.trim() != '') {
+                var reg = /^\w{4,16}$/;
+                var bool = reg.test(username.value.trim());
+                if (!bool) {
+                    username.value='';
+                    username.focus();
+                    alert('请输入正确的4-16位用户名');
+                }
+            }
+        }
+        login.init('.login-form');
+    </script>
     <!-- footer -->
     <div class="footer">
         有任何购物问题请联系我们在线客服 | 电话：021-55135395 | 工作时间：周一至周五 09:30－18:00
         <p>©2017 阿尼托 上海索罗游信息技术有限公司 anitoys.com 版权所有</p>
         <div style="text-align: center;">沪ICP备11047967号-18</div>
     </div>
-
 </body>
 
 </html>
