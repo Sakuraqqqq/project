@@ -130,6 +130,7 @@
         </div>
     </div>
     <script>
+        var $btn = document.querySelector('.register-btn');
         var username = document.querySelector('.username');
         var password = document.querySelector('.password');
         var check_password = document.querySelector('.check-password');
@@ -165,21 +166,25 @@
             } else if (len >= 6 && len < 10) {
                 progress.children[0].style.background = '#e22335';
                 progress.children[1].style.background = '#ccc';
+                progress.children[2].style.background = '#ccc';
             } else if (len >= 10 && len < 15) {
+                progress.children[0].style.background = '#e22335';
                 progress.children[1].style.background = '#e22335';
                 progress.children[2].style.background = '#ccc';
             } else if (len >= 15 && len <= 20) {
+                progress.children[0].style.background = '#e22335';
+                progress.children[1].style.background = '#e22335';
                 progress.children[2].style.background = '#e22335';
             }
         }
         check_password.onblur = function () {
             if (password.value != check_password.value) {
                 password.value='';
+                check_password.value='';
                 password.focus();
                 progress.children[0].style.background = '#ccc';
                 progress.children[1].style.background = '#ccc';
                 progress.children[2].style.background = '#ccc';
-                check_password.value='';
                 alert('两次密码输入不一致');
             }
         }
