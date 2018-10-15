@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="../css/item.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="../js/item.js"></script>
+</head>
+
+<body>
+    <div id="topnav" class="topnav">
+        <div class="commonBox">
+            <div class="topnav-left">
+                <div class="login">
+                    <a href="./">欢迎来到anitoys</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="html/login.html">请登录</a>
+                    <a href="html/register.html" style="color:#ff6600">免费注册</a>
+                </div>
+                <div class="member" style="display:none"></div>
+            </div>
+            <div class="topnav-right">
+                <ul class="right-nav">
+                    <li><a href="#">站内信</a>
+                    </li>
+                    <li><a href="#">我的订单&nbsp;<i></i></a>
+                        <ul class="option-nav">
+                            <li><a href="#">待补款订单</a></li>
+                            <li><a href="#">已发货订单</a></li>
+                            <li><a href="#">售后订单</a></li>
+                            <li><a href="#">历史订单</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">我的anitoys&nbsp;<i></i></a>
+                        <ul class="option-nav">
+                            <li><a href="#">积分</a></li>
+                            <li><a href="#">收货地址</a></li>
+                            <li><a href="#">安全中心</a></li>
+                            <li><a href="#">优惠券</a></li>
+                            <li><a href="#">收藏的商品</a></li>
+                            <li><a href="#">收藏的店铺</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">联系客服</a>
+                    </li>
+                    <li><a href="#">旧版补款入口</a>
+                    </li>
+                    <li><a href="#">关注我们&nbsp;<i></i></a>
+                        <ul class="option-nav">
+                            <li><a href="#">官方微博</a></li>
+                            <li><a href="#">微信公众号</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 头部信息栏 -->
+
+    <div id="header" class="header">
+        <div class="commonBox">
+            <div class="header-bg">
+                <div class="row">
+                    <div class="header-left"></div>
+                    <div class="header-center">
+                        <div class="search-box">
+                            <form action="http://www.anitoys.com/search.html" method="POST" id="search">
+                                <i class="iconfont icon-sousuo"></i>
+                                <input type="text" placeholder="请输入关键词">
+                                <button>搜索</button>
+                            </form>
+                            <div class="hots">
+                                <span>热门搜索：</span>
+                                <a href="#">Fate系列</a>
+                                <a href="#">守望先锋</a>
+                                <a href="#">初音未来</a>
+                                <a href="#">全职高手</a>
+                                <a href="#">刀剑乱舞</a>
+                                <a href="#">精灵宝可梦</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="shop-car">
+                            <a href="#" class="car-btn">
+                                <span>
+                                    <span>
+                                        <i class="iconfont icon-gouwuche"></i>
+                                        <b class="car-number">0</b>
+                                        去购物车结算
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页面导航栏 -->
+
+    <div id="nav" class="nav">
+        <div class="commonBox">
+            <div class="rows">
+                <div class="nav-left">
+                    <a href="#">所有周边</a>
+                    <ul class="main-nav">
+                        <li>
+                            <div class="main-nav-item">
+                                <a href="#">
+                                    <em>|</em>
+                                    手办/模型/玩偶
+                                </a>
+                            </div>
+                            <ul class="main-nav-hover">
+                                <li>
+                                    <div class="main-nav-title">手办</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">粘土人</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">可动小比例</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">等比例手办</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">盒蛋/扭蛋</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="main-nav-title">模型</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">普通模型</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">拼装模型</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">车模</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="main-nav-title">玩偶</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">玩偶</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div class="main-nav-item">
+                                <a href="#">
+                                    <em>|</em>
+                                    角色周边/文具办公/日用家居
+                                </a>
+                            </div>
+                            <ul class="main-nav-hover">
+                                <li>
+                                    <div class="main-nav-title">角色周边</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">服装</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">挂件</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">徽章</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">钥匙圈</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">鼠标垫</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">海报/挂画</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">手机配件</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">其他周边</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="main-nav-title">文具办公</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">书签</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">胶带</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">贴纸</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">笔记本</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">文件夹</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">明信片</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">书写工具</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="main-nav-title">日用家居</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">围巾/毛巾</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">镜子</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">抱枕靠垫</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">床单毛毯</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">餐饮器具</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">整理收纳</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="main-nav-title">箱包装饰</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">零钱包</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">手提包</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">双肩包</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div class="main-nav-item">
+                                <a href="#">
+                                    <em>|</em>
+                                    演出票务/官方周边
+                                </a>
+                            </div>
+                            <ul class="main-nav-hover">
+                                <li>
+                                    <div class="main-nav-title">票务</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">演唱会</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">见面会</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">展览会</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="main-nav-title">官方周边</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">荧光棒</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">服装</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">徽章/挂件/钥匙圈</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">写真</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">手帕/手巾</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">零钱包/手提包</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                        <li>
+                                            <a href="#">其他周边</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div class="main-nav-item">
+                                <a href="#">
+                                    <em>|</em>
+                                    其他
+                                </a>
+                            </div>
+                            <ul class="main-nav-hover">
+                                <li>
+                                    <div class="main-nav-title">服务</div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">费用</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <em>|</em>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <div class="main-nav-item">
+                                <a href="#">
+                                    <em>|</em>
+                                    更多
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="nav-main">
+                    <li><a href="#" class="on">首页</a></li>
+                    <li><a href="#">旧版补款入口</a></li>
+                    <li><a href="#">新品预售</a></li>
+                    <li><a href="#">现货</a></li>
+                    <li><a href="#">优惠券</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- main -->
+    <div class="main">
+        <div class="commonBox">
+            <div class="goods-nav">
+                <a href="#">手办/模型/玩偶</a>
+                <span>></span>
+                <span>手办</span>
+                <span>></span>
+                <a href="#">等比例手办</a>
+                <span>></span>
+                <a href="#">Hobbymax</a>
+                <span>></span>
+                <span>【包邮】绝世舞姬貂蝉 典藏手办</span>
+            </div>
+            <div class="goods-detail">
+                <div class="goods-detail-left">
+                    <div class="pic-show">
+                        <div class="show-box">
+                            <img src="../images/goods_1.jpg" alt="">
+                            <span class="filter"></span>
+                        </div>
+                    </div>
+                    <div class="pic-thumb">
+                        <div class="slider-thumb-warp">
+                            <ul class="slider-thumb">
+                                <li class="active">
+                                    <div class="thumb-item">
+                                        <img src="../images/goods_1_small.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumb-item">
+                                        <img src="../images/goods_2_small.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumb-item">
+                                        <img src="../images/goods_3_small.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumb-item">
+                                        <img src="../images/goods_4_small.jpg" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="thumb-item">
+                                        <img src="../images/goods_5_small.jpg" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pro-like">
+                        <a href="#">收藏商品</a>
+                        <div class="like-more">
+                            <a href="#">更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods-detail-right">
+                    <div class="detail-panel">
+                        <div class="detail-panel-bd">
+                            <div class="detail-panel-info">
+                                <div class="detail-panel-hd">
+                                    <h1>
+                                        <em>预售</em>
+                                        <span>【包邮】绝世舞姬貂蝉 典藏手办</span>
+                                    </h1>
+                                </div>
+                                <div class="summary-outbox">
+                                    <ul class="summary">
+                                        <li>
+                                            <div class="dt">商品信息：</div>
+                                            <div class="dd">
+                                                <span>预售已开始</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dt">价格：</div>
+                                            <div class="dd">
+                                                <span class="all-price">￥698.00</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="dt">定金：</div>
+                                            <div class="dd">
+                                                <span class="first-price">￥100.00</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="detail-other-info"></div>
+                                <div class="choose">
+                                    <div class="choose-spec">
+                                        <div class="dt">种类：</div>
+                                        <div class="dd">
+                                            <div class="choose-item" title="预售">预售</div>
+                                        </div>
+                                    </div>
+                                    <div class="choose-quantity">
+                                        <div class="dt">购买数量：</div>
+                                        <div class="dd">
+                                            <div class="buy-number">
+                                                <input type="number" name="item[quantity]" min="1" max="4" value="1"
+                                                    class="action-quantity-input">
+                                            </div>
+                                            <div class="buy-info">件
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="choose-remind clearfix">
+                                        <div class="dt">您已选择：</div>
+                                        <div class="dd">
+                                            <span class="choose-curr-num">1</span>
+                                            件
+                                        </div>
+                                    </div>
+                                    <div class="btn-wrap">
+                                            <a href="javascript:void()" class="btn">
+                                                <span>
+                                                    <span>立即购买</span>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="btn cart-btn">
+                                                <span>
+                                                    <span>加入购物车</span>
+                                                </span>
+                                            </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="seller">
+                                <li>卖家：
+                                    <a href="#">172Store</a>
+                                </li>
+                                <li>
+                                    <div class="clearfix">
+                                        <div class="im-tit">联系客服：</div>
+                                        <div class="im-b">
+                                            <a href="#">
+                                                <img src="http://www.anitoys.com/app/toputil/statics/images/qq.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="btn-wrap">
+                                        <a href="#"><span><span>进入店铺</span></span></a>
+                                        <a href="#"><span><span>进入店铺</span></span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bigImg">
+                    <img src="../images/goods_1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    glass.init(2);
+    </script>
+
+    <!-- 返回顶部 -->
+
+    <div class="friend-link">
+        <div class="commonBox">
+            <div class="back-to-top">
+                <span>返回顶部</span>
+            </div>
+            <div class="little-banner">
+                <a href="#">
+                    <img src="http://upload2016.anitoys.com/FocpUHA1fZPzUNllym2scSlg5ygi" alt="" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部导航 -->
+
+    <div class="footer">
+        <div class="commonBox">
+            <ul class="footer-ul">
+                <h4>新手帮助</h4>
+                <a href="#">补款流程</a>
+                <a href="#">预售商品购买流程</a>
+                <a href="#">现货购买流程</a>
+                <a href="#">常见问题</a>
+                <a href="#">会员注册协议</a>
+            </ul>
+            <ul class="footer-ul">
+                <h4>积分优惠券</h4>
+                <a href="#">优惠券使用教程与规则</a>
+                <a href="#">会员等级规则</a>
+                <a href="#">积分使用规则</a>
+                <a href="#">积分奖励计划</a>
+            </ul>
+            <ul class="footer-ul">
+                <h4>售后</h4>
+                <a href="#">投诉建议</a>
+                <a href="#">关于预存款充值</a>
+                <a href="#">网站免责声明</a>
+            </ul>
+            <ul class="footer-ul">
+                <h4>关于我们</h4>
+                <a href="#">联系我们</a>
+                <a href="#">网站更新详情</a>
+                <a href="#">公司介绍</a>
+                <a href="#">关于172酱与她的小伙伴</a>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        有任何购物问题请联系我们在线客服 | 电话：021-55135395 | 工作时间：周一至周五 09:30－18:00
+        <p>©2017 阿尼托 上海索罗游信息技术有限公司 anitoys.com 版权所有</p>
+        <div style="text-align: center;">沪ICP备11047967号-18</div>
+    </div>
+</body>
+
+</html>
