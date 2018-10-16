@@ -8,6 +8,7 @@
     <title>商品详情页</title>
     <link rel="stylesheet" href="../css/item.css">
     <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <script src="../js/jquery.js"></script>
     <script src="../js/item.js"></script>
 </head>
 
@@ -16,7 +17,7 @@
         <div class="commonBox">
             <div class="topnav-left">
                 <div class="login">
-                    <a href="./">欢迎来到anitoys</a>
+                    <a href="../index.html">欢迎来到anitoys</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="html/login.html">请登录</a>
                     <a href="html/register.html" style="color:#ff6600">免费注册</a>
@@ -87,7 +88,7 @@
                     </div>
                     <div class="header-right">
                         <div class="shop-car">
-                            <a href="#" class="car-btn">
+                            <a href="cart.html" class="car-btn">
                                 <span>
                                     <span>
                                         <i class="iconfont icon-gouwuche"></i>
@@ -98,6 +99,16 @@
                             </a>
                         </div>
                     </div>
+                    <script>
+                        var shopList = localStorage.shopList || '[]';
+                        shopList = JSON.parse(shopList);
+                        var num = 0 ;
+                        for(var i = 0 ; i < shopList.length ; i++){
+                            num += shopList[i].count
+                        }
+                        var car_number = document.querySelector('.car-number');
+                        car_number.innerHTML = num;
+                    </script>
                 </div>
             </div>
         </div>
@@ -400,7 +411,7 @@
 
 
     <!-- main -->
-    <div class="main">
+    <div class="main" id="main">
         <div class="commonBox">
             <div class="goods-nav">
                 <a href="#">手办/模型/玩偶</a>
@@ -419,6 +430,9 @@
                         <div class="show-box">
                             <img src="../images/goods_1.jpg" alt="">
                             <span class="filter"></span>
+                        </div>
+                        <div class="bigImg">
+                            <img src="../images/goods_1.jpg" alt="">
                         </div>
                     </div>
                     <div class="pic-thumb">
@@ -492,7 +506,7 @@
                                     </ul>
                                 </div>
                                 <div class="detail-other-info"></div>
-                                <div class="choose">
+                                <div class="choose" id="detail">
                                     <div class="choose-spec">
                                         <div class="dt">种类：</div>
                                         <div class="dd">
@@ -518,16 +532,12 @@
                                         </div>
                                     </div>
                                     <div class="btn-wrap">
-                                            <a href="javascript:void()" class="btn">
-                                                <span>
-                                                    <span>立即购买</span>
-                                                </span>
-                                            </a>
-                                            <a href="#" class="btn cart-btn">
-                                                <span>
-                                                    <span>加入购物车</span>
-                                                </span>
-                                            </a>
+                                        <button class="btn">
+                                            立即购买
+                                        </button>
+                                        <button class="btn cart-btn">
+                                            加入购物车
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -555,14 +565,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="bigImg">
-                    <img src="../images/goods_1.jpg" alt="">
-                </div>
             </div>
         </div>
     </div>
     <script>
-    glass.init(2);
+        var cart_btn = document.querySelector('.cart-btn')
+        cart_btn.onclick = function(){
+            console.log(111)
+            window.location.reload();
+        }
+        glass.init();
     </script>
 
     <!-- 返回顶部 -->
@@ -619,6 +631,9 @@
         <p>©2017 阿尼托 上海索罗游信息技术有限公司 anitoys.com 版权所有</p>
         <div style="text-align: center;">沪ICP备11047967号-18</div>
     </div>
+    <script>
+        index_js.init()
+    </script>
 </body>
 
 </html>

@@ -18,7 +18,7 @@
     $rows = $coon -> Query($sql, 2);
     if($rows) {
       // 用户输入正确
-      $arr = array("code" => "200", "msg"=>"", "data"=>array("id"=>$rows["id"], "token"=>"1234567899", "atavar"=> "http://www.aaa.com/path/a.png"));
+      $arr = array("code" => "200", "msg"=>"", "data"=>array("id"=>$rows["id"], "username"=>$rows["username"],"token"=>"1234567899"));
     } else {
       // 输入错误
       $arr = array("code" => "1000", "msg" => "用户名或密码输入错误");

@@ -31,9 +31,27 @@ var login = (function(){
         },
         loginSuccess: function(data) {
             if(data.code == 200) {
-                document.cookie = "user-id=" + data.data.id;
-                document.cookie = "token=" + data.data.token;
-                localStorage.userImg = data.data.ataver;
+                var add = true;
+                var userlist = localStorage.userList || '[]';
+                localStorage.userList = '';
+                userlist = JSON.parse(userlist)
+                for (var i = 0; i < userlist.length; i++) {
+                    if(data.data.name != userlist[i]){
+                        add = false
+                        break;
+                    }
+                }
+                if(add){
+                    userlist.push(data.data);
+                }
+                localStorage.userList = JSON.stringify(userlist);
+                // userlist[user-id] = data.data.id;
+                // userlist[username] = data.data.username;
+                // userlist[token] = data.data.token;
+                // var $cookie = new OperationCookie();
+                // $cookie.setItem("user-id" , data.data.id,7);
+                // $cookie.setItem("token" , data.data.token,7);
+                // $cookie.getItem('user');
                 location.href = '../index.html';
             } else {
                 alert(data.msg);

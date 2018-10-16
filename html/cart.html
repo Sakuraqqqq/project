@@ -8,6 +8,7 @@
     <title>我的购物车</title>
     <link rel="stylesheet" href="../css/cart.css">
     <link rel="stylesheet" href="../iconfont/iconfont.css">
+
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <div class="commonBox">
             <div class="topnav-left">
                 <div class="login">
-                    <a href="./">欢迎来到anitoys</a>
+                    <a href="../index.html">欢迎来到anitoys</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="html/login.html">请登录</a>
                     <a href="html/register.html" style="color:#ff6600">免费注册</a>
@@ -99,6 +100,16 @@
                                 </span>
                             </a>
                         </div>
+                        <script>
+                            var shopList = localStorage.shopList || '[]';
+                            shopList = JSON.parse(shopList);
+                            var num = 0;
+                            for (var i = 0; i < shopList.length; i++) {
+                                num += shopList[i].count
+                            }
+                            var car_number = document.querySelector('.car-number');
+                            car_number.innerHTML = num;
+                        </script>
                     </div>
                 </div>
             </div>
@@ -410,6 +421,21 @@
             </div>
             <div class="cart-main">
                 <div class="cart">
+                    <table class="cart-main-box">
+                        <thead>
+                            <tr>
+                                <th>商品名称</th>
+                                <th>单价</th>
+                                <th>购买数量</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbox">
+                            <tr>
+
+                            </tr>
+                        </tbody>
+                    </table>
                     <div class="empty-cart">
                         <div class="empty-cart-main">
                             <i class="iconfont icon-gouwuche"></i>
@@ -423,6 +449,11 @@
             </div>
         </div>
     </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/cart.js"></script>
+    <script>
+        index_js.init();
+    </script>
     <!-- 返回顶部 -->
 
     <div class="friend-link">

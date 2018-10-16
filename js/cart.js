@@ -1,7 +1,15 @@
 var index_js = (function(){
     // 展示数据的盒子
     var $ul = $('.tbox');
+    var $empty = $('.empty-cart');
     var shopList = localStorage.shopList || '[]';
+    if(shopList == '[]'){
+        console.log(111);
+        $empty.css("display","block");
+    }else{
+        console.log(222);
+        $empty.css("display","none");
+    }
     shopList = JSON.parse(shopList);
 
     return {
@@ -62,11 +70,13 @@ var index_js = (function(){
                // 删除数组中对应的数据
                shopList.splice(tr.index(), 1);
                // 存入到本地数据库
+               if(shopList == ''){
+                    $empty.css("display","block");
+               }
                localStorage.shopList = JSON.stringify(shopList);
                // 移出dom元素
-               tr.remove()
+               tr.remove();
             })
         }
     }
 })()
-index_js.init()

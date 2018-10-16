@@ -35,9 +35,23 @@ var register = (function(){
             var _check_password = document.querySelector('.check-password');
             var _progress = document.querySelector('.progress');
             if(data.code == 200) {
-                document.cookie = "user-id=" + data.data.id;
-                document.cookie = "token=" + data.data.token;
-                localStorage.userImg = data.data.ataver;
+                var add = true;
+                var userlist = localStorage.userList || '[]';
+                localStorage.userList = '';
+                userlist = JSON.parse(userlist)
+                for (var i = 0; i < userlist.length; i++) {
+                    if(data.data.name != userlist[i]){
+                        add = false
+                        break;
+                    }
+                }
+                if(add){
+                    userlist.push(data.data);
+                }
+                localStorage.userList = JSON.stringify(userlist);
+                // document.cookie = "user-id=" + data.data.id;
+                // document.cookie = "token=" + data.data.token;
+                // localStorage.userImg = data.data.ataver;
                 location.href = '../index.html';
             } else {
                 _username.value = '';

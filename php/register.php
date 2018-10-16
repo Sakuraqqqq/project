@@ -23,8 +23,9 @@
     } else {
       // 用户名称不存在
       $result = $coon -> Query($insert_sql, 3);
+      $rows = $coon -> Query($sql, 2);
       if($result) {
-        $arr = array("code" => "200", "msg"=>"", "data"=>array("id"=>$rows["id"], "token"=>"1234561654681"));
+        $arr = array("code" => "200", "msg"=>"", "data"=>array("id"=>$rows["id"], "username"=>$rows["username"], "token"=>"1234561654681"));
       } else {
         $arr = array("code" => "1000", "msg"=>"未知错误, 注册不成功");
       }
