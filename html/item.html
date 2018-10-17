@@ -19,11 +19,36 @@
                 <div class="login">
                     <a href="../index.html">欢迎来到anitoys</a>
                     &nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="html/login.html">请登录</a>
-                    <a href="html/register.html" style="color:#ff6600">免费注册</a>
+                    <a href="login.html">请登录</a>
+                    <a href="register.html" style="color:#ff6600">免费注册</a>
                 </div>
-                <div class="member" style="display:none"></div>
+                <div class="member" style="display:none">
+                    您好<span id="uname"></span>！
+                    <a class="go-out" href="javascript:;">退出</a>
+                </div>
             </div>
+            <script>
+                var $member = document.querySelector('.member');
+                var $login = document.querySelector('.login');
+                var $uname = document.getElementById('uname');
+                var $go_out = document.querySelector('.go-out');
+                var userlist = localStorage.userList;
+                userlist = JSON.parse(userlist);
+                if(userlist[0]){
+                    $login.style.display = 'none';
+                    $member.style.display = 'block';
+                    $uname.innerHTML = userlist[0].username;
+                }else{
+                    $login.style.display = 'block';
+                    $member.style.display = 'none';
+                }
+                $go_out.onclick = function(){
+                    userlist.splice(0,1);
+                    localStorage.userList = JSON.stringify(userlist);
+                    $login.style.display = 'block';
+                    $member.style.display = 'none';
+                }
+            </script>
             <div class="topnav-right">
                 <ul class="right-nav">
                     <li><a href="#">站内信</a>
@@ -399,7 +424,7 @@
                     </ul>
                 </div>
                 <ul class="nav-main">
-                    <li><a href="#" class="on">首页</a></li>
+                    <li><a href="../index.html" class="on">首页</a></li>
                     <li><a href="#">旧版补款入口</a></li>
                     <li><a href="#">新品预售</a></li>
                     <li><a href="#">现货</a></li>
@@ -591,6 +616,42 @@
             </div>
         </div>
     </div>
+    <script>
+        var _scroll = (function(){
+            var $up = document.querySelector('.back-to-top');
+            return {
+                init: function() {
+                    this.event()
+                },
+                event: function() {
+                     //  单击按钮回到顶部
+                    $up.onclick = function() {
+                        var time = setInterval(function() {
+                            var _top = document.documentElement.scrollTop - 100;
+                            if(_top <= 0) {
+                               _top = 0;
+                               clearInterval(time);
+                            }
+                            document.documentElement.scrollTop =  _top;
+                        }, 10);
+                    }
+                    window.onscroll = function() {
+                         // 获取滚动距离
+                        var top = document.documentElement.scrollTop;
+                        console.log(top);
+                        if(top >= 100) {
+                          $up.style.display = 'block';
+                        } else {
+                          $up.style.display = 'none';
+                        }
+                    }
+                }
+            }
+        }())
+     //    作用域查找，是以函数定义时的作用域为主。
+        _scroll.init();
+ 
+     </script>
 
     <!-- 底部导航 -->
 

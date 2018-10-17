@@ -825,7 +825,7 @@ a {
 /* 返回顶部 */
 
 .back-to-top {
-    /* display: none; */
+    display: none;
     position: fixed;
     right: 10px;
     bottom: 20px;
